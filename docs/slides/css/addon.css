@@ -1,0 +1,59 @@
+.stat-bar {
+    border: 1px solid #000 !important;
+    box-sizing: border-box;
+    margin: 60px 0px;
+    height: 30px;
+}
+
+.stat-bar .stat-section {
+    float: left;
+    height: 100%;
+    position: relative;
+}
+.stat-bar .stat-one {
+    width: 1%;
+    background: #000;
+}
+.stat-bar .stat-one:after {
+    content: "1%";
+    position: absolute;
+    bottom: -30px;
+    left: -2px;
+    font-size: 12px;
+}
+
+.stat-bar .stat-two {
+    width: 45%;
+    background-image: url(../img/semsci2017/dotted.jpg);
+    background-repeat: repeat;
+    background-size: 150px auto;
+}
+
+.stat-bar .stat-two:after {
+    content: "45% (after I4OC launch)";
+    position: absolute;
+    bottom: -30px;
+    left: 35%;
+    font-size: 12px;
+}
+
+.stat-bar .stat-three {
+    width: 1%;
+    background: #fff;
+}
+
+.stat-bar .stat-three:after {
+    content: "54%";
+    position: absolute;
+    bottom: -30px;
+    left:2500%;
+    font-size: 12px;
+}
+
+.oc-blue {
+    color: #2D22DE;
+}
+
+.oc-purple {
+    color: #9931FC;
+}

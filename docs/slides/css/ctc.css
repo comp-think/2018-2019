@@ -1,0 +1,397 @@
+* {
+    text-align: left;
+}
+
+li > p {
+    margin:0px !important;
+}
+
+.ma {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.clb {
+    clear: both !important;
+}
+
+q::before {
+    content:"“" !important;
+}
+
+q::after {
+    content:"”" !important;
+}
+
+img {
+    border: 1px solid black !important;
+}
+
+.st {
+    font-size: 85% !important;
+}
+
+.sst {
+    font-size: 70% !important;
+}
+
+.ssst {
+    font-size: 55% !important;
+}
+
+.sssst {
+    font-size: 40% !important;
+}
+
+.bt {
+    font-size: 140% !important;
+}
+
+.bbt {
+    font-size: 180% !important;
+}
+
+.bbbt {
+    font-size: 220% !important;
+}
+
+.bbbbt {
+    font-size: 260% !important;
+}
+
+.title_slide * {
+    text-align: center;
+}
+
+.subtitle {
+    display: block;
+    font-size: 40% !important;
+}
+
+.author {
+    margin-top:40px !important;
+}
+
+.author p {
+    margin:0px;
+}
+
+.author .contact {
+    font-size: 70% !important;
+}
+
+.contact i {
+    margin-left: 15px;
+}
+
+.license {
+    font-size: 80% !important;
+    margin-top: 50px !important;
+}
+
+.license a:first-child::before {
+   content: url(ccby.png);
+   vertical-align: middle;
+}​
+
+ul li:first-child p {
+    margin-top: 0px !important;
+}
+
+.hs {
+    max-height:100px !important ;
+}
+
+.hss {
+    max-height:200px !important ;
+}
+
+.hsm {
+    max-height:200px !important ;
+}
+
+.hm {
+    max-height:300px !important ;
+}
+
+.hmm {
+    max-height:420px !important ;
+}
+
+.hl {
+    max-height:540px !important ;
+}
+
+.ws {
+    max-width:100px !important ;
+}
+
+.wss {
+    max-width:200px !important ;
+}
+
+.wsss {
+    max-width:250px !important ;
+}
+
+.wm {
+    max-width:300px !important ;
+}
+
+.wmx {
+    max-width:400px !important ;
+}
+
+.wmm {
+    max-width:450px !important ;
+}
+
+.wmmm {
+    max-width:530px !important ;
+}
+
+.wl {
+    max-width:600px !important ;
+}
+
+.wxl {
+    max-width:750px !important ;
+}
+
+.pls {
+    margin-left:5px !important ;
+}
+
+.prs {
+    padding-right:5px !important ;
+}
+
+.pts {
+    padding-top:5px !important ;
+}
+
+.pbs {
+    padding-bottom:5px !important ;
+}
+
+.plm {
+    padding-left:15px !important ;
+}
+
+.prm {
+    padding-right:15px !important ;
+}
+
+.ptm {
+    padding-top:15px !important ;
+}
+
+.pbm {
+    padding-bottom:15px !important ;
+}
+
+.pll {
+    padding-left:35px !important ;
+}
+
+.prl {
+    padding-right:35px !important ;
+}
+
+.ptl {
+    padding-top:35px !important ;
+}
+
+.pbl {
+    padding-bottom:35px !important ;
+}
+
+.mls {
+    margin-left:5px !important ;
+}
+
+.mrs {
+    margin-right:5px !important ;
+}
+
+.mtn {
+    margin-top:0px !important ;
+}
+
+.mbn {
+    margin-bottom:0px !important ;
+}
+
+.mln {
+    margin-left:0px !important ;
+}
+
+.mrn {
+    margin-right:0px !important ;
+}
+
+.mts {
+    margin-top:5px !important ;
+}
+
+.mbs {
+    margin-bottom:5px !important ;
+}
+
+.mlm {
+    margin-left:15px !important ;
+}
+
+.mrm {
+    margin-right:15px !important ;
+}
+
+.mtm {
+    margin-top:15px !important ;
+}
+
+.mbm {
+    margin-bottom:15px !important ;
+}
+
+.mll {
+    margin-left:35px !important ;
+}
+
+.mlxl {
+    margin-left:50px !important ;
+}
+
+.mrl {
+    margin-right:35px !important ;
+}
+
+.mrxl {
+    margin-right:50px !important ;
+}
+
+.mtl {
+    margin-top:35px !important ;
+}
+
+.mbl {
+    margin-bottom:35px !important ;
+}
+
+.mbxl {
+    margin-bottom:50px !important ;
+}
+
+.fl {
+    float:left !important ;
+}
+
+.fr {
+    float:right !important ;
+}
+
+.tl {
+    text-align:left !important ;
+}
+
+.tr {
+    text-align:right !important ;
+}
+
+.tc {
+    text-align:center !important;
+}
+
+.tj {
+    text-align:justify !important ;
+}
+
+ul ul {
+    font-size: 80% !important;
+}
+
+.bw {
+    background-color:white !important;
+}
+
+.cr {
+	color: red;
+}
+
+.cw {
+	color: white;
+}
+
+.cy {
+    color: gold;
+}
+
+.cp {
+    color: mediumorchid;
+}
+
+.cb {
+    color: royalblue;
+}
+
+.cg {
+    color: forestgreen;
+}
+
+.fm {
+    font-size: 70% !important;
+}
+
+.fs {
+    font-size: 40% !important;
+}
+
+footer {
+    font-size: 12pt !important;
+}
+
+*[role=doc-abstract] {
+    display: none !important;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+blockquote > p:first-child {
+    margin-top: 0px !important;
+}
+
+blockquote > p:last-child {
+    margin-bottom: 0px !important;
+}
+
+td p {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+cite {
+    font-style: italic !important;
+}
+
+.graph {
+    max-width: 80% !important;
+}
+
+pre, code {
+    white-space: pre-wrap !important;
+    white-space: -moz-pre-wrap !important;
+    white-space: -pre-wrap !important;
+    white-space: -o-pre-wrap !important;
+    word-wrap: break-word !important;
+}
+
+.cell {
+	border: 1px solid black !important;
+}
+
+* { 
+	overflow-wrap: break-word !important;
+}

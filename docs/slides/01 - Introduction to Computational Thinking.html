@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Introduction to Computational Thinking</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/ctc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/addon.css"></link>
+		<link rel="stylesheet" href="css/font-awesome.min.css"></link>
+		<link rel="stylesheet" href="css/academicons.min.css"></link>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="title" class="title_slide" role="doc-cover">
+					<h1 class="bbbbt">Introduction to Computational Thinking</h1>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</p>
+						<p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></p>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Historic hero: Noam Chomsky</h2>
+					<img class="wmm fr mlm" src="img/chomsky.jpg" />
+					<p>Founders of the cognitive science field</p>
+					<p>Father of the modern linguistics</p>
+					<p class="fragment">Provided a classification for <em>formal grammars</em></p>
+					<p class="fragment">A <em>formal grammar</em> is a mathematical tool for defining a language (e.g. English) according to a finite set of production rules, that allows one to construct any syntactic valid sentence of such language</p>
+					
+					<!-- formal language -->
+					<!-- formal grammar -->
+					<!-- example of sentence generation -->
+				</section>
+				
+				<section>
+					<h2>Types of formal grammars</h2>
+					<ul>
+						<li><p>regular grammars (the least expressive)</p></li>
+						<li><p>context-free grammars</p></li>
+						<li><p>context-sensitive grammars</p></li>
+						<li><p>recursively enumerable grammars (the most expressive)</p></li>
+					</ul>
+					<p>All specify constraints on the way one can use <em>terminal</em> and <em>non-terminal</em> symbols</p>
+					<ul>
+						<li><p>terminals are elementary symbols of the language (e.g. words), e.g. <code>"write"</code></p></li>
+						<li><p>non-terminals (e.g. <code>&lt;sentence></code>) can be replaced by a combination of terminal and non-terminal symbols</p></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Example of formal grammar</h2>
+					<p>A simple grammar defined using the Backus-Naur form</p>
+					<pre><code>&lt;sentence> ::= &lt;pronoun> "write"
+&lt;pronoun> ::= "I"
+&lt;pronoun> ::= "you"</code></pre>
+					<div class="fragment">
+						<p>Is the sentence <q>I write</q> part of the language defined by the aforementioned grammar?</p>
+						<pre class="fragment"><code>&lt;sentence> ⇒
+&lt;pronoun> "write" ⇒
+"I" "write"</code></pre>
+						<p class="fragment">The sentence <q>I write</q> is part of the language</p>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Meaning: part 1</h2>
+					<p><span class="fragment highlight-red">Computational</span> Thinking and Programming</p>
+					<p class="fragment">Definition of <em>computational</em> (Oxford Dictionary): using or relating to <span class="fragment highlight-red">computers</span></p> 
+					<p class="fragment">A <em>computer</em> (today): electronic device</p>
+					<p class="fragment">A <em>computer</em> (before advent of electronic computers): a person who performs mathematical calculations</p>
+					<p class="fragment">In this course, with <em>computer</em> we mean any agent (i.e. anything that can act if appropriately instructed, such as a <span class="fragment highlight-red">person or a machine</span>) that is able to make calculations and to produce some output starting from input information</p>
+				</section>
+				
+				<section>
+					<h2>Computers</h2>
+					<p>Human computers: in France, creation of mathematical tables for converting values from the old imperial system of measurement to the new metric system</p>
+					<div class="fragment tc fl mrs">
+						<img class="hm" src="img/analytical_engine.jpg" />
+						<p class="tc mtn">Babbage's Analytical Engine</p>
+					</div>
+					<div class="fragment tc fr mls">
+						<img class="hm" src="img/eniac.jpg" />
+						<p class="tc mtn">ENIAC</p>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Meaning: part 2</h2>
+					<p>Computational Thinking and <span class="fragment highlight-red">Programming</span></p>
+					<p class="fragment">The word <em>programming</em> stands for <em>programming <span class="fragment highlight-red">language</span></em></p>
+					<p class="fragment">Natural language: ordinary language (e.g. English), either written or oral, that has evolved naturally in humans, usually without a specific and premeditated planning – expressive but ambiguous</p>
+					<p class="fragment">Programming language: formal-born languages (Chomsky's context-free languages, usually) - less expressive but not ambiguous by construction</p>
+				</section>
+				
+				<section>
+					<h2>Kinds of languages 1/2</h2>
+					<div class="wm fl tc mrs">
+						<p class="tc">Machine language</p>
+						<pre><code class="sst">100010110101010000100100000010001000001111111010000000000111011100000110101110000000000000000000000000000000000011000011100000111111101000000010011101110000011010111000000000010000000000000000000000001100001101010011101110110000000100000000000000000000000010111001000000010000000000000000000000001000110100000100000110011000001111111010000000110111011000000111100010111101100110001001110000010100101011101011111100010101101111000011</code></pre>
+					</div>
+					<div class="fragment wl tc fr mls">
+						<p class="tc">Low-level programming language</p>
+						<pre class="wsss fl"><code class="sst">fib:
+    mov edx, [esp+8]
+    cmp edx, 0
+    ja @f
+    mov eax, 0
+    ret
+    
+    @@:
+    cmp edx, 2
+    ja @f
+    mov eax, 1
+    ret
+    
+    @@:
+    push ebx
+    mov ebx, 1
+    mov ecx, 1</code></pre>
+    
+    <pre class="wsss fr"><code class="sst">    @@:
+        lea eax, [ebx+ecx]
+        cmp edx, 3
+        jbe @f
+        mov ebx, ecx
+        mov ecx, eax
+        dec edx
+    jmp @b
+    
+    @@:
+    pop ebx
+    ret</code></pre>
+					<div>
+				</section>
+				
+				<section>
+					<h2>Kinds of languages 2/2</h2>
+					<div class="wmmm fl tc">
+						<p class="tc">High-level programming language</p>
+						<pre><code class="sst">unsigned int fib(unsigned int n) {
+    if (n <= 0) return 0;
+    else if (n <= 2) return 1;
+    else {
+        unsigned int a,b,c;
+        a = 1;
+        b = 1;
+        while (1) {
+            c = a + b;
+            if (n <= 3) return c;
+            a = b;
+            b = c;
+            n--;
+        }
+    }
+}</code></pre>
+					</div>
+					<div class="fragment wmx tc fr">
+						<p class="tc">Natural language</p>
+						<pre><span class="sst">The function for calculating the nth Fibonacci number takes as input an integer "n". If "n" is less than or equal to 0, then 0 is returned as result. Otherwise, if "n" is less than or equal to 2, then 1 is returned. Otherwise, in all the other cases, associate the value "1" to two distinct variables "a" and "b". Then, repeat indefinitely the following operations: set the variable "c" as the sum of "a" plus "b"; if "n" is less than or equal to 3 then return "c", otherwise assign the value of "b" to "a" and the value of "c" to "b", and finally decrease the value of "n" by 1 before repeating.</span></pre>
+					<div>
+				</section>
+				
+				<section>
+					<h2>Meaning: part 3</h2>
+					<p>Computational <span class="fragment highlight-red">Thinking</span> and Programming</p>
+					<p class="fragment">To think (definition, Oxford Dictionary): use one's mind actively to form connected ideas</p>
+					<ol class="fragment">
+						<li><p>Agree on which language to use for the communication between us and a computer (either human or machine)</p></li>
+						<li class="fragment"><p>Think about possible instructions that, if followed systematically, can return the expected result to a certain problem</p></li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Abstraction is the key</h2>
+					<p>Identify patterns that depict a possible solution for a set of abstractly-homogeneous situations</p>
+					<p>Reuse the same strategy for reaching our goal, if that strategy has been successful in the past</p>
+					<p class="fragment tc"><img class="hm" src="img/children.png" /> <img class="hm" src="img/post_office.png" /></p>
+				</section>
+				
+				<section>
+					<h2>What is Computational Thinking</h2>
+					<p>An approach for solving problems, designing systems and understanding human behaviour that draws on concepts fundamental to computing</p>
+					<p class="fragment">Reshape the abstractions we have ingested as consequence of our life experiences – that we are unconsciously reusing</p>
+					<p class="fragment">Being again fully conscious of such abstractions, we can use an appropriate language for making them understandable to a computer, in order to automatise them</p>
+					<p class="fragment">Final goal of Computational Thinking: think like a Computer Scientist, even when dealing with common tasks</p>
+				</section>
+				
+				<section class="title_slide">
+					<h2>
+						END
+						<span class="subtitle">Introduction to Computational Thinking</span>
+					</h2>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
