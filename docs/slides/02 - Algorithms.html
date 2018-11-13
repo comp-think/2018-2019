@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Algorithms</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/ctc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/addon.css"></link>
+		<link rel="stylesheet" href="css/font-awesome.min.css"></link>
+		<link rel="stylesheet" href="css/academicons.min.css"></link>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="title" class="title_slide" role="doc-cover">
+					<h1>Algorithms</h1>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+						<p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></p>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Communication 1</h2>
+					<p>As of yesterday, only 20 people have subscribed to the mailing list</p>
+					<p><strong class="fragment highlight-red">Please subscribe to the mailing list as soon as possible</strong></p>
+					<p>How: send me an e-mail (<a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>) using your UniBo email address, and I'll add you directly to the list</p>
+					<p>Then, you can receive / send emails from / to <a href="mailto:compthink1819@googlegroups.com">compthink1819@googlegroups.com</a></p>
+				</section>
+
+				<section>
+					<h2>Communication 2</h2>
+					<p>We have a new Telegram group for instant-messaging!</p>
+                    <p><a href="https://telegram.org/">Telegram</a> is a cloud-based mobile and desktop messaging app with a focus on security and speed, it is an <a href="https://en.wikipedia.org/wiki/Open-source_software">open source software</a>, and can be used in any device (it has been developed for mobile and desktop devices)</p>
+                    <p>The invitation link to the group will be sent on the mailing list – thus, please, <strong class="fragment highlight-red">subscribe to the mailing list first</strong></p>
+                    <p></p>
+				</section>
+				
+				<section>
+					<h2>Communication 3</h2>
+					<p>Exam sessions dates (informal):</p>
+					<ul>
+						<li><p>25 January 2019</p></li>
+						<li><p>15 March 2019</p></li>
+						<li><p>22 May 2019</p></li>
+						<li><p>21 June 2019</p></li>
+						<li><p>17 July 2019</p></li>
+						<li><p>20 September 2019</p></li>
+					</ul>
+					<div class="fragment">
+						<p>For each date:</p>
+						<ul>
+							<li><p>written examination: 10-12</p></li>
+							<li><p>project oral colloquium: 13-16</p></li>
+						</ul>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Any question about the previous lecture?</h2>
+				</section>
+
+				<section>
+					<h2>Historic hero: Ada Lovelace</h2>
+					<img class="wm fr mlm" src="img/ada.jpg" />
+					<p>English mathematicians</p>
+					<p>English translator of the first article about Babbage's Analytical Engine, written by Luigi Federico Menabrea in French</p>
+					<p class="fragment">She enriched the English translation of the article with several annotations</p>
+					<p class="fragment">Original article: ~8000 words</p>
+					<p class="fragment">Notes by Ada: additional ~19000 words</p>
+				</section>
+				
+				<section>
+					<h2>Ada's heritage</h2>
+					<p>First mechanical computer programmer: in the article notes, there is a description of how to use the Analytical Engine to calculate the Bernoulli numbers</p>
+					<blockquote class="ssst"><p>The operating mechanism can even be thrown into action independently of any object to operate upon (although of course no result could then be developed). Again, <span class="fragment highlight-red">it might act upon other things besides number</span>, were objects found whose mutual fundamental relations could be expressed by those of the abstract <span class="fragment highlight-red">science of operations</span>, and which should be also susceptible of adaptations to the action of the operating notation and mechanism of the engine. Supposing, for instance, that the fundamental relations of pitched sounds in the science of harmony and of musical composition were susceptible of such expression and adaptations, the <span class="fragment highlight-red">engine might compose elaborate and scientific pieces of music</span> of any degree of complexity or extent.</p></blockquote>
+					<p class="fragment">Science of Operations = Computer Science</p>
+				</section>
+				
+				<section>
+					<h2>Common features</h2>
+					<p>What do recipes and instructions for assembling objects have in common?</p>
+					<p class="tc"><img class="wxl" src="img/recipe-ikea.png" /></p>
+					<p class="fragment">Shared <span class="fragment highlight-red">abstract</span> notion: step-by-step procedure for producing something starting from some initial material we have<span class="fragment"> = algorithm</span></p>
+				</section>
+				
+				<section>
+					<h2>Algorithm</h2>
+					<p>The word <q>algorithm</q> is a combination of the Latin word <em>algorismus</em> (that is the Latinization of the name Al-Khwarizmi, who was a great mathematician from Persia in the 8th century) and the Greek word <em>arithmos</em>, meaning <em>number</em></p>
+					<p class="fragment">Each algorithm is written in a specific <span class="fragment highlight-red">language</span> which is functional to communicate its instruction to a computer</p>
+					<p class="fragment">Computer programmer: anyone that creates algorithms that can be interpreted by any computer</p>
+				</section>
+				
+				<section>
+					<h2>Pseudocode</h2>
+					<p>A pseudocode in an informal language that could be interpreted easily by any computer - even if, usually, it is pretty close to a programming language</p>
+					<p>It is used by Computer Scientists for sketching an algorithm before to implement it in a particular programming language</p>
+					<p>Checking if an algorithm can be interpretable by a computer: provide a colleague with the pseudocode of the algorithm and ask her to execute it using a particular input, writing down all the passages of the execution on a piece of paper</p>
+				</section>
+				
+				<section>
+					<h2>Flowchart</h2>
+                    <p>In this lecture, though, we use a particular graphical alternative to a common pseudocode which is good for being understandable by humans: a flowchart</p>
+					<p>Our first algorithm: taking in input three different strings, i.e. two words and a bibliographic entry of a published paper, return 2 if both the words are contained in the bibliographic entry, 1 if at least one of the words is contained in the bibliographic entry, and 0 otherwise</p>
+                    <p class="st fragment">E.g.: input <code>"Berners-Lee"</code>, <code>"web"</code> and <code>"Tim Berners-Lee: Designing the web for an open society. WWW 2011: 3-4"</code><span class="fragment">; output <code>2</code>.</span></p>
+				</section>
+
+                <section>
+                    <h2>Flowchart: flowline</h2>
+                    <p class="tc"><img src="img/flowline.png" /></p>
+                    <p>The arrow is used to define the order in which the operations are executed</p>
+                    <p>The flow indicated by the arrows begin in the starting terminal and ends in the ending terminal</p>
+                </section>
+
+                <section>
+                    <h2>Flowchart: terminal</h2>
+                    <p class="tc"><img src="img/terminal.png" /></p>
+                    <p>It indicates the beginning and ending of an algorithm</p>
+                    <p>It contains a text (usually, either "start" or "end") so as to disambiguate which role has the particular terminal widget in the context of the algorithm</p>
+                </section>
+
+                <section>
+                    <h2>Flowchart: input / output</h2>
+                    <p class="tc"><img src="img/input_output.png" /></p>
+                    <p>It allows one to specify possible input / output material which is used / returned by the algorithm usually at the beginning or end of its execution</p>
+                </section>
+
+                <section>
+                    <h2>Flowchart: decision</h2>
+                    <p class="tc"><img src="img/decision.png" /></p>
+                    <p>It depicts a conditional operation, where a condition is checked and, depending on the value of some of the variables involved in the algorithm, the execution continues in a particular branch instead of another</p>
+                    <p>Usually, the this operation creates two possible alternative branches: one to be followed whether the condition considered is true, and the other in case the condition is false</p>
+                </section>
+
+                <section data-transition="slide-in fade-out">
+                    <h2>Partial algorithm</h2>
+                    <p>Take in input only two strings, i.e. an input word and a bibliographic entry, and return <em>1</em> if the the input word is contained in the bibliographic entry, otherwise return <em>0</em></p>
+                    <p class="fragment"><img src="img/partial-algorithm-01.png" /></p>
+                </section>
+
+                <section data-transition="fade-in">
+                    <h2>Partial algorithm</h2>
+                    <p>Take in input only two strings, i.e. an input word and a bibliographic entry, and return <em>1</em> if the the input word is contained in the bibliographic entry, otherwise return <em>0</em></p>
+                    <p><img src="img/partial-algorithm-02.png" /></p>
+                </section>
+
+                <section data-transition="fade-in">
+                    <h2>Partial algorithm</h2>
+                    <p>Take in input only two strings, i.e. an input word and a bibliographic entry, and return <em>1</em> if the the input word is contained in the bibliographic entry, otherwise return <em>0</em></p>
+                    <p><img src="img/partial-algorithm-03.png" /></p>
+                </section>
+
+                <section data-transition="fade-in">
+                    <h2>Partial algorithm</h2>
+                    <p>Take in input only two strings, i.e. an input word and a bibliographic entry, and return <em>1</em> if the the input word is contained in the bibliographic entry, otherwise return <em>0</em></p>
+                    <p><img src="img/partial-algorithm-04.png" /></p>
+                </section>
+
+                <section data-transition="fade-in">
+                    <h2>Partial algorithm</h2>
+                    <p>Take in input only two strings, i.e. an input word and a bibliographic entry, and return <em>1</em> if the the input word is contained in the bibliographic entry, otherwise return <em>0</em></p>
+                    <p><img src="img/partial-algorithm-05.png" /></p>
+                </section>
+				
+				<section>
+                    <h2>Flowchart: process</h2>
+                    <p class="tc"><img src="img/process.png" /></p>
+                    <p>It is used for expressing (usually one) instruction or operation, that is executed and that can change the current state of some variables used in the algorithm</p>
+                    <p>The text it includes depicts the instruction to execute</p>
+                </section>
+				
+				<section>
+					<h2>Final algorithm: reprise</h2>
+                    <p>Take in input three different strings, i.e. two words and a bibliographic entry of a published paper, and return <em>2</em> if both the words are contained in the bibliographic entry, <em>1</em> if at least one of the words is contained in the bibliographic entry, and <em>0</em> otherwise</p>
+				</section>
+
+                <section data-transition="slide-in fade-out">
+                    <h2>Final algorithm: flowchart</h2>
+                    <p class="fragment"><img src="img/final-algorithm-01.png" /></p>
+                </section>
+
+                <section data-transition="fade-in">
+                    <h2>Final algorithm: flowchart</h2>
+                    <p><img src="img/final-algorithm-02.png" /></p>
+                </section>
+
+                <section data-transition="fade-in">
+                    <h2>Final algorithm: flowchart</h2>
+                    <p><img src="img/final-algorithm-03.png" /></p>
+                </section>
+
+                <section data-transition="fade-in">
+                    <h2>Final algorithm: flowchart</h2>
+                    <p><img src="img/final-algorithm-04.png" /></p>
+                </section>
+
+                <section data-transition="fade-in">
+                    <h2>Final algorithm: flowchart</h2>
+                    <p><img src="img/final-algorithm-05.png" /></p>
+                </section>
+
+                <section data-transition="fade-in">
+                    <h2>Final algorithm: flowchart</h2>
+                    <p><img src="img/final-algorithm-06.png" /></p>
+                </section>
+
+                <section data-transition="fade-in">
+                    <h2>Final algorithm: flowchart</h2>
+                    <p><img src="img/final-algorithm-07.png" /></p>
+                </section>
+
+                <section data-transition="fade-in">
+                    <h2>Final algorithm: flowchart</h2>
+                    <p><img src="img/final-algorithm-08.png" /></p>
+                </section>
+
+                <section data-transition="fade-in">
+                    <h2>Final algorithm: flowchart</h2>
+                    <p><img src="img/final-algorithm-09.png" /></p>
+                </section>
+
+                <section>
+                    <h2>How to create flowcharts</h2>
+                    <p class="fragment">Old-fashioned method: use a piece of paper plus either a pencil or pen - it works, I swear</p>
+                    <p class="fragment">Modern method: there exists also online tools that allow you to create a flowchart by using an (electronic) computer - e.g. the one that has been used to create all the diagrams in this lecture is called <a href="https://draw.io">Draw.io</a>, which is a free-to-use Web application with a nice graphical user interface</p>
+                </section>
+				
+				<section class="title_slide">
+					<h2>
+						END
+						<span class="subtitle">Algorithms</span>
+					</h2>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
