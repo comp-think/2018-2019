@@ -1,0 +1,418 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Computability</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/ctc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/addon.css"></link>
+		<link rel="stylesheet" href="css/font-awesome.min.css"></link>
+		<link rel="stylesheet" href="css/academicons.min.css"></link>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="title" class="title_slide" role="doc-cover">
+					<h1>Computability</h1>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+						<p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></p>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Communication 1</h2>
+					<p>As of yesterday, only 36 people have subscribed to the mailing list</p>
+					<p><strong class="fragment highlight-red">Please subscribe to the mailing list as soon as possible</strong></p>
+					<p>How: send me an e-mail (<a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>) using your UniBo email address, and I'll add you directly to the list</p>
+					<p>Then, you can receive / send emails from / to <a href="mailto:compthink1819@googlegroups.com">compthink1819@googlegroups.com</a></p>
+				</section>
+				
+				<section>
+					<h2>Communication 2</h2>
+					<p>The Telegram group is active - see the mailing list to get the link to subscribe to it</p>
+				</section>
+				
+				<section>
+					<h2>Any question about the previous lecture?</h2>
+				</section>
+
+				<section>
+					<h2>Historic hero: Alan Turing</h2>
+					<img class="wm fr mlm" src="img/turing.jpg" />
+					<p>Computer scientist (+ works in mathematics, logic, philosophy, and biology)</p>
+					<p class="fragment">Father of Theoretical Computer Science (see Turing machine)<span class="fragment"> and of Artificial Intelligence (see Turing test)</span></p></li>
+					</ul>
+					<p class="fragment">Crucial contribution in deciphering the German Nazy Enigma machine during the Second World War - he was appointed an Officer of the Order of the British Empire (OBE)</p>
+				</section>
+				
+				<section>
+					<h2>Turing machine</h2>
+					<img class="wm fr mlm" src="img/machine.jpg" />
+					<p>It is a theoretical machine</p>
+					<p class="mbs">Turing machine can be used to simulate any algorithm</p>
+					<p class="fragment ssst mtn">If you can define an algorithm for solving a particular computational problem, then there exists a Turing machine that can solve the same problem as well, and vice versa</p>
+					<div class="fragment">
+						<p>It is composed by:</p>
+						<ul>
+							<li class="fragment"><p>an infinite memory tape containing cells - each cell can contain 0 (blank symbol) or 1</p></li>
+							<li class="fragment"><p>an head for reading/writing/moving on the tape</p></li>
+							<li class="fragment"><p>a storage for recording the current state</p></li>
+							<li class="fragment"><p>a finite table of instructions + start and end states</p></li>
+						</ul>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Table of instructions</h2>
+					<table>
+						<tr>
+							<th>Current state</th>
+							<th>Tape symbol</th>
+							<th>Write symbol</th>
+							<th>Move tape</th>
+							<th>Next state</th>
+						</tr>
+						<tr>
+							 <td><p>A </p></td>
+							 <td><p>0 or 1 </p></td>
+							 <td><p>1 </p></td>
+							 <td><p>right </p></td>
+							 <td><p>B </p></td>
+						</tr>
+						<tr>
+							 <td><p>B </p></td>
+							 <td><p>0 or 1 </p></td>
+							 <td><p>0 </p></td>
+							 <td><p>right </p></td>
+							 <td><p>A </p></td>
+						</tr>
+					</table>
+					<p>Start state: A</p>
+					<p>No end states</p>
+				</section>
+				
+				<section>
+					<section data-transition="slide-in fade-out">
+						<h2>Graphical example</h2>
+						<table>
+							<tr>
+								<th>Current state</th>
+								<th>Tape symbol</th>
+								<th>Write symbol</th>
+								<th>Move tape</th>
+								<th>Next state</th>
+							</tr>
+							<tr>
+								 <td><p>A </p></td>
+								 <td><p>0 or 1 </p></td>
+								 <td><p>1 </p></td>
+								 <td><p>right </p></td>
+								 <td><p>B </p></td>
+							</tr>
+							<tr>
+								 <td><p>B </p></td>
+								 <td><p>0 or 1 </p></td>
+								 <td><p>0 </p></td>
+								 <td><p>right </p></td>
+								 <td><p>A </p></td>
+							</tr>
+						</table>
+						<p class="tc"><img src="img/turing-machine-01.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Graphical example</h2>
+						<table>
+						<tr>
+							<th>Current state</th>
+							<th>Tape symbol</th>
+							<th>Write symbol</th>
+							<th>Move tape</th>
+							<th>Next state</th>
+						</tr>
+						<tr>
+							 <td><p>A </p></td>
+							 <td><p>0 or 1 </p></td>
+							 <td><p>1 </p></td>
+							 <td><p>right </p></td>
+							 <td><p>B </p></td>
+						</tr>
+						<tr>
+							 <td><p>B </p></td>
+							 <td><p>0 or 1 </p></td>
+							 <td><p>0 </p></td>
+							 <td><p>right </p></td>
+							 <td><p>A </p></td>
+						</tr>
+					</table>
+						<p class="tc"><img src="img/turing-machine-02.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Graphical example</h2>
+						<table>
+						<tr>
+							<th>Current state</th>
+							<th>Tape symbol</th>
+							<th>Write symbol</th>
+							<th>Move tape</th>
+							<th>Next state</th>
+						</tr>
+						<tr>
+							 <td><p>A </p></td>
+							 <td><p>0 or 1 </p></td>
+							 <td><p>1 </p></td>
+							 <td><p>right </p></td>
+							 <td><p>B </p></td>
+						</tr>
+						<tr>
+							 <td><p>B </p></td>
+							 <td><p>0 or 1 </p></td>
+							 <td><p>0 </p></td>
+							 <td><p>right </p></td>
+							 <td><p>A </p></td>
+						</tr>
+					</table>
+						<p class="tc"><img src="img/turing-machine-03.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Graphical example</h2>
+						<table>
+						<tr>
+							<th>Current state</th>
+							<th>Tape symbol</th>
+							<th>Write symbol</th>
+							<th>Move tape</th>
+							<th>Next state</th>
+						</tr>
+						<tr>
+							 <td><p>A </p></td>
+							 <td><p>0 or 1 </p></td>
+							 <td><p>1 </p></td>
+							 <td><p>right </p></td>
+							 <td><p>B </p></td>
+						</tr>
+						<tr>
+							 <td><p>B </p></td>
+							 <td><p>0 or 1 </p></td>
+							 <td><p>0 </p></td>
+							 <td><p>right </p></td>
+							 <td><p>A </p></td>
+						</tr>
+					</table>
+						<p class="tc"><img src="img/turing-machine-04.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Graphical example</h2>
+						<table>
+						<tr>
+							<th>Current state</th>
+							<th>Tape symbol</th>
+							<th>Write symbol</th>
+							<th>Move tape</th>
+							<th>Next state</th>
+						</tr>
+						<tr>
+							 <td><p>A </p></td>
+							 <td><p>0 or 1 </p></td>
+							 <td><p>1 </p></td>
+							 <td><p>right </p></td>
+							 <td><p>B </p></td>
+						</tr>
+						<tr>
+							 <td><p>B </p></td>
+							 <td><p>0 or 1 </p></td>
+							 <td><p>0 </p></td>
+							 <td><p>right </p></td>
+							 <td><p>A </p></td>
+						</tr>
+					</table>
+						<p class="tc"><img src="img/turing-machine-05.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Graphical example</h2>
+						<table>
+						<tr>
+							<th>Current state</th>
+							<th>Tape symbol</th>
+							<th>Write symbol</th>
+							<th>Move tape</th>
+							<th>Next state</th>
+						</tr>
+						<tr>
+							 <td><p>A </p></td>
+							 <td><p>0 or 1 </p></td>
+							 <td><p>1 </p></td>
+							 <td><p>right </p></td>
+							 <td><p>B </p></td>
+						</tr>
+						<tr>
+							 <td><p>B </p></td>
+							 <td><p>0 or 1 </p></td>
+							 <td><p>0 </p></td>
+							 <td><p>right </p></td>
+							 <td><p>A </p></td>
+						</tr>
+					</table>
+						<p class="tc"><img src="img/turing-machine-06.png" /></p>
+					</section>
+				</section>
+				
+				<section>
+					<h2>Cost of computation</h2>
+					<p>The previous simple machine can compute indefinitely (there are no ending states)</p>
+					<p class="fragment">Other machines could compute a result in a reasonable finite time</p>
+					<p class="fragment">There can be also algorithms that must spend an <span class="fragment highlight-red">exaggerated</span> time (even if still finite) to return a result</p>
+					<p class="fragment">Execution cost of an algorithm: how much time, indicatively, an algorithm needs for returning a result</p>
+				</section>
+				
+				<section>
+					<h2>How to do it</h2>
+					<p class="mbs">Computational complexity theory: classifying <span class="fragment highlight-red">computational problems</span></p>
+					<p class="fragment sst mtn">Computational problem: a problem that be solved algorithmically by a computer</p>
+					<p class="fragment">Classification to an algorithm is provided according to a specific hierarchy of classes that express the difficulty in solving such problems</p>
+					<p class="fragment mbs">Analysis of algorithms: understanding the amount of time, storage and other resources that are needed to execute such algorithm, defined in terms of a mathematical function</p>
+					<p class="fragment sst mtn">Typical question: how many instructions an algorithm has to execute to return the final result from that input?</p>
+				</section>
+				
+				<section>
+					<h2>Lessons to learn</h2>
+					<p>The <span class="fragment highlight-red">efficiency</span> of an algorithm is directly derived and guided by the way such algorithm has been developed</p>
+					<p class="fragment">It is possible to develop <span class="fragment highlight-red">two</span> different algorithms addressing the <span class="fragment highlight-red">same</span> computational problem that take two drastic different times for returning the result</p>
+				</section>
+				
+				<section>
+					<h2>Important questions</h2>
+					<p>Can we use algorithms for computing whatever we want?</p>
+					<p class="fragment">Alternatively, there exists a limitation on what we can compute?</p>
+					<p class="fragment mbs">Alternatively, is it possible to define a computational problem that cannot be solved by any algorithm?</p>
+					<p class="fragment sst mtn">Turing created his machine for answering this question</p>
+				</section>
+				
+				<section>
+					<h2>Reductio ad absurdum</h2>
+					<p>One of the most used approaches to demonstrate that something cannot exist</p>
+					<p>Idea: to come to a paradoxical and self-contradictory situation in which, for instance, the existence of an algorithm contradicts its existence itself</p>
+				</section>
+				
+				<section>
+					<h2>Library paradox</h2>
+					<div class="fl wm tc">
+						<p class="tc">Setting</p>
+						<img src="img/setting.png" />
+					</div>
+					<div class="fr wm tc fragment">
+						<p class="tc">Problem</p>
+						<img src="img/problem.png" />
+					</div>
+				</section>
+				
+				<section>
+					<h2>Resolution</h2>
+					<p class="fragment tc">
+						<img class="wl" src="img/resolution-01.png" />
+					</p>
+					<p class="fragment tc">
+						<img class="wl" src="img/resolution-02.png" />
+					</p>
+				</section>
+				
+				<section>
+					<h2>The halting problem</h2>
+					<p>Proposed by David Hilbert in 1900</p>
+					<p class="fragment">Description: is it possible to develop an algorithm that takes another algorithm as input and determines if such input algorithm will terminate its execution at some point or it will run forever?</p>
+					<p class="fragment">From Turing point of view: can we develop a Turing machine which is able to certainly decide if another machine will terminate its execution or will not?</p>
+				</section>
+				
+				<section>
+					<h2>Resolution (part 1)</h2>
+					<p>Suppose we have a <q>does it halt</q> algorithm which takes in input another algorithm and returns <em>yes</em> if the input algorithm terminates, and <em>no</em> otherwise</p>
+			        <p class="fragment"><img src="img/does-it-halt-algorithm.png" /></p>
+				</section>
+
+				<section>
+					<h2>Resolution (part 2)</h2>
+					<p>We reuse the <q>does it halt</q> algorithm for developing a new algorithm</p>
+			        <p><img src="img/simple-algorithm.png" /></p>
+					<p class="fragment"><q>Run forever</q> exists since we can develop a Turing machine that does not terminate</p>
+				</section>
+				
+				<section>
+					<h2>Resolution (part 2)</h2>
+					<p>What happens if we try to execute the last algorithm passing itself as input?</p>
+					<p class="fragment">Two situations:</p>
+					<ol class="fragment">
+						<li><p>if <q>does it halt</q> says that the last algorithm <span class="fragment highlight-red">stops</span>, then such last algorithm <span class="fragment highlight-red">runs forever</span></p></li>
+						<li class="fragment"><p>if <q>does it halt</q> says that the last algorithm <span class="fragment highlight-red">runs forever</span>, then such last algorithm <span class="fragment highlight-red">stops</span></p></li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Contradiction</h2>
+					<p>Whatever is the behaviour of the last algorithm, it always generates a contradiction
+					<p>While the last algorithm can be developed (all the widgets in the diagram can be actually developed), then it is ​<q>does it halt</q> that cannot be developed</p>
+					<p class="fragment">Turing's machines and their analyses posed clear limits to what we can compute, since there are specific computational problems that cannot be solved</p>
+				</section>
+				
+				<section class="title_slide">
+					<h2>
+						END
+						<span class="subtitle">Computability</span>
+					</h2>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
