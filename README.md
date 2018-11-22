@@ -21,7 +21,7 @@ This space contains all the material related to the [Computational Thinking and 
 4. [16/11/18, *the*] Computability: slides ([HTML](https://comp-think.github.io/2018-2019/slides/03%20-%20Computability.html)), lecture notes ([PDF](https://comp-think.github.io/2018-2019/lecture-notes/03%20-%20Computability.pdf), [Google Docs](https://tinyurl.com/comp-think-03))
 5. [19/11/18, *the*] Programming languages: slides ([HTML](https://comp-think.github.io/2018-2019/slides/04%20-%20Programming%20languages.html)), lecture notes ([PDF](https://comp-think.github.io/2018-2019/lecture-notes/04%20-%20Programming%20languages.pdf), [Google Docs](https://tinyurl.com/comp-think-04))
 6. [22/11/18, *lab*] Install Python with Anaconda and PyCharm: instructions ([GitHub](https://github.com/marilenadaquino/computational_thinking/tree/master/ay-2018-2019/1_lesson))
-7. [23/11/18, *the*] Organising information: ordered structures: slides ([HTML](https://comp-think.github.io/2018-2019/slides/05%20-%20Organising%20information%20-%20ordered%20structures.html)), lecture notes ([PDF](https://comp-think.github.io/2018-2019/lecture-notes/05%20-%20Organising%20information%20-%20ordered%20structures), [Google Docs](https://tinyurl.com/comp-think-05))
+7. [23/11/18, *the*] Organising information: ordered structures: slides ([HTML](https://comp-think.github.io/2018-2019/slides/05%20-%20Organising%20information%20-%20ordered%20structures.html)), lecture notes ([PDF](https://comp-think.github.io/2018-2019/lecture-notes/05%20-%20Organising%20information%20-%20ordered%20structures.pdf), [Google Docs](https://tinyurl.com/comp-think-05))
 
 ### Schedule
 
