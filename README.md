@@ -11,11 +11,16 @@ This space contains all the material related to the [Computational Thinking and 
 
 ### Material
 
-1. Introduction to the course: slides ([HTML](https://comp-think.github.io/2018-2019/slides/00%20-%20Course%20introduction.html))
-2. Introduction to Computational Thinking: slides ([HTML](https://comp-think.github.io/2018-2019/slides/01%20-%20Introduction%20to%20Computational%20Thinking.html)), lecture notes ([PDF](https://comp-think.github.io/2018-2019/lecture-notes/01%20-%20Introduction%20to%20Computational%20Thinking.pdf), [Google Docs](https://tinyurl.com/comp-think-01))
-3. Algorithms: slides ([HTML](https://comp-think.github.io/2018-2019/slides/02%20-%20Algorithms.html)), lecture notes ([PDF](https://comp-think.github.io/2018-2019/lecture-notes/02%20-%20Algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-02))
-4. Computability: slides ([HTML](https://comp-think.github.io/2018-2019/slides/03%20-%20Computability.html)), lecture notes ([PDF](https://comp-think.github.io/2018-2019/lecture-notes/03%20-%20Computability.pdf), [Google Docs](https://tinyurl.com/comp-think-03))
-5. Programming languages: slides ([HTML](https://comp-think.github.io/2018-2019/slides/04%20-%20Programming%20languages.html)), lecture notes ([PDF](https://comp-think.github.io/2018-2019/lecture-notes/04%20-%20Programming%20languages.pdf), [Google Docs](https://tinyurl.com/comp-think-04))
+**Keys:** 
+* *the* = theoretical lecture
+* *lab* = laboratory session
+
+1. [12/11/18, *the*] Introduction to the course: slides ([HTML](https://comp-think.github.io/2018-2019/slides/00%20-%20Course%20introduction.html))
+2. [12/11/18, *the*] Introduction to Computational Thinking: slides ([HTML](https://comp-think.github.io/2018-2019/slides/01%20-%20Introduction%20to%20Computational%20Thinking.html)), lecture notes ([PDF](https://comp-think.github.io/2018-2019/lecture-notes/01%20-%20Introduction%20to%20Computational%20Thinking.pdf), [Google Docs](https://tinyurl.com/comp-think-01))
+3. [14/11/18, *the*] Algorithms: slides ([HTML](https://comp-think.github.io/2018-2019/slides/02%20-%20Algorithms.html)), lecture notes ([PDF](https://comp-think.github.io/2018-2019/lecture-notes/02%20-%20Algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-02))
+4. [16/11/18, *the*] Computability: slides ([HTML](https://comp-think.github.io/2018-2019/slides/03%20-%20Computability.html)), lecture notes ([PDF](https://comp-think.github.io/2018-2019/lecture-notes/03%20-%20Computability.pdf), [Google Docs](https://tinyurl.com/comp-think-03))
+5. [19/11/18, *the*] Programming languages: slides ([HTML](https://comp-think.github.io/2018-2019/slides/04%20-%20Programming%20languages.html)), lecture notes ([PDF](https://comp-think.github.io/2018-2019/lecture-notes/04%20-%20Programming%20languages.pdf), [Google Docs](https://tinyurl.com/comp-think-04))
+6. [22/11/18, *lab*] Install Python with Anaconda and PyCharm: instructions ([GitHub](https://github.com/marilenadaquino/computational_thinking/tree/master/ay-2018-2019/1_lesson))
 
 ### Schedule
 
