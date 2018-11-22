@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Organising information: ordered structures</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/ctc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/addon.css"></link>
+		<link rel="stylesheet" href="css/font-awesome.min.css"></link>
+		<link rel="stylesheet" href="css/academicons.min.css"></link>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="title" class="title_slide" role="doc-cover">
+					<h1 class="bbbbt">Organising information: ordered structures</h1>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+						<p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></p>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Communication 1</h2>
+					<p>The <a href="https://github.com/comp-think/2018-2019/">GitHub repository of the course</a> now includes also the links to the laboratory lectures, that will be presented by <a href="https://twitter.com/emmedaquino">Marilena Daquino</a></p>
+				</section>
+				
+				<section>
+					<h2>Any question about the previous lecture?</h2>
+				</section>
+				
+				<section>
+					<h2>Historic hero: Donald Knuth</h2>
+					<img class="wm fr mlm" src="img/knuth.jpg" />
+					<p>Donald Knuth is a Computer Scientist</p>
+					<p class="fragment">Main contributions: theoretical and practical development of the analysis of the computational complexity of algorithms<span class="fragment">, The Art of Computer Programming series of monographs</span><span class="fragment">, TeX typesetting system for writing academic documents</span></p>
+					<p class="fragment">The Art of Computer Programming is an ongoing work (3 volumes and an half out of 7 have been published so far)</p>
+				</section>
+
+				<section>
+					<h2>Preliminaries: python functions</h2>
+					<p>Definition of functions:<br /><code>def &lt;function name>(&lt;param_1>, ...)</code></p>
+					<p class="fragment">It is the mechanism for implementing functions in Python, i.e. a mechanism for listing a sequence of instructions under a particular name</p>
+					<ul>
+						<li class="fragment"><p><em>Built-in</em> functions: made available by the programming language itself, e.g. <code>len()</code> or <code>list()</code></p></li>
+						<li class="fragment"><p><em>User-defined</em> functions: written by a user of the language for addressing some specific requirements or tasks that are not addressable by means of one built-in function directly, like the algorithm implemented in the previous lecture</p></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Preliminaries: executions</h2>
+					<pre><code class="python">def add_one(n):
+    return n + 1
+
+result = add_one(41)
+print(result)</code></pre>
+					<p class="fragment"><code>print(&lt;object_1>, &lt;object_2>, ...)</code> allows one to print on screen one or more values (that can be referred by a variable)</p>
+				</section>
+
+				<section>
+					<h2>Preliminaries: packages</h2>
+					<p>Module: a Python file (extension .py) that contains the definition of variables, functions, and even runnable code</p>
+					<p class="fragment">Package: a mechanism to expose one or more Python modules, functions, variables</p>
+                    <pre class="fragment"><code class="python">from &lt;package> import &lt;module or function or variable></code></pre>
+                    <div class="fragment">
+                        <p>Example:</p>
+                        <pre><code class="python">from collections import deque</code></pre>
+                    </div>
+				</section>
+				
+				<section>
+					<h2>Data structures</h2>
+					<p>The first volume of Knuth's series of books is entirely dedicated to a comprehensive introduction of all the basic data structures</p>
+					<p class="fragment">A <em>data structure</em> is a way in which we can <span class="fragment highlight-red">organise</span> the information to process and returned by a computer, so as it can be accessed and modified in an efficient and computational manner</p>
+					<p class="fragment">Broadly speaking, it is a sort of bucket where we can place some information, that provides some methods to add and retrieve pieces of such information</p>
+				</section>				
+				
+				<section>
+					<h2>Order and repeatability</h2>
+					<p>Among the simplest data structures, there are those ones that organise their element in a specific <span class="fragment highlight-red">order</span> and allow the <span class="fragment highlight-red">repeatability</span> of the values they contain</p>
+					<p class="fragment">Order: the sequence in which the elements are added to these data structures matters</p>
+					<p class="fragment">Repeatability: the same value can appear twice or more times in the same data structure</p>
+				</section>
+				
+				<section>
+					<h2>List: example</h2>
+					<p class="tc"><img class="hl" src="img/list.png" /></p>
+				</section>
+				
+				<section>
+					<h2>List: definition</h2>
+					<p>A list is a <span class="fragment highlight-red">countable</span> sequence of <span class="fragment highlight-red">ordered</span> and <span class="fragment highlight-red">repeatable</span> elements</p>
+					<p class="fragment">Countable: it is possible to know the length of the list (i.e. how many elements it contains) – in Python, we can use the function <code>len(&lt;countable_object>)</code></p>
+					<p class="fragment">Ordered: the elements are placed in the list in a specific order, which is preserved</p>
+					<p class="fragment">Repeatable: the elements may appear more than one time in the list</p>
+				</section>
+				
+				<section>
+					<h2>List: methods</h2>
+					<p>Create a new list: <code>list()</code></p>
+					<p class="fragment">Add new element: <code>&lt;list>.append(&lt;element>)</code></p>
+					<p class="fragment">Remove element: <code>&lt;list>.remove(&lt;element>)</code></p>
+					<p class="fragment">Add elements from another list: <code>&lt;list>.extend(&lt;another_list>)</code></p>
+				</section>
+				
+				<section>
+					<h2>Use methods on list</h2>
+					<pre><span class="fragment" data-fragment-index="1">my_first_list = list()</span>
+<span class="fragment" data-fragment-index="2">my_first_list.append(34)</span>
+<span class="fragment" data-fragment-index="3">my_first_list.append(15)</span>
+<span class="fragment" data-fragment-index="4">my_first_list.append("Silvio")</span>
+<span class="fragment" data-fragment-index="5">my_first_list.remove(34)</span>
+<span class="fragment" data-fragment-index="6">my_first_list.extend(my_first_list)</span></pre>
+					<p>
+						<code class="fragment" data-fragment-index="1">my_first_list = </code>
+						<span class="fragment fade-out" data-fragment-index="5"><span class="cell fragment" data-fragment-index="2">34</span></span>
+						<span class="cell fragment" data-fragment-index="3">15</span>
+						<span class="cell fragment" data-fragment-index="4">"Silvio"</span>
+						<span class="cell fragment" data-fragment-index="6">15</span>
+						<span class="cell fragment" data-fragment-index="6">"Silvio"</span>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Stack: example</h2>
+					<p class="tc"><img class="hl" src="img/stack.png" /></p>
+				</section>
+				
+				<section>
+					<h2>Stack: definition</h2>
+					<p>A stack is a is a kind of list seen from a particular perspective, i.e. from <span class="fragment highlight-red">bottom to top</span>, and with a specific set of operations</p>
+					<p class="fragment">The elements follow a <em class="fragment highlight-red">last in first out</em> strategy (LIFO) for addition and removal</p>
+					<p class="fragment">The last element inserted in the structure is placed in the top of the stack and, thus, it is also the first one that will be removed when requested</p>
+					<p class="fragment">For removing the element in the middle of the stack one has to remove all the elements that have been added <span class="fragment highlight-red">after</span> such middle element</p>
+				</section>
+				
+				<section>
+					<h2>Stack: methods</h2>
+					<p>Create a new stack: <code>deque()</code></p>
+					<p class="fragment">Add new element: <code>&lt;stack>.append(&lt;element>)</code></p>
+					<p class="fragment">Remove (and return) latest element: <code>&lt;stack>.pop()</code></p>
+					<p class="fragment">Add elements from another stack: <code>&lt;stack>.extend(&lt;another_stack>)</code></p>
+				</section>
+				
+				<section>
+					<h2>Use methods on stack</h2>
+					<pre><span class="fragment" data-fragment-index="1">my_first_stack = deque()</span>
+<span class="fragment" data-fragment-index="2">my_first_stack.append(34)</span>
+<span class="fragment" data-fragment-index="3">my_first_stack.append(15)</span>
+<span class="fragment" data-fragment-index="4">my_first_stack.extend(my_first_stack)</span>
+<span class="fragment" data-fragment-index="5">my_first_stack.append("Silvio")</span>
+<span class="fragment" data-fragment-index="6">my_first_stack.pop()</span>
+</pre>
+					<div>
+						<p class="fl"><code class="fragment" data-fragment-index="1">my_first_stack =</code></p>	
+						<div style="margin-left:40%">
+							<div><span class="fragment fade-out" data-fragment-index="6"><span class="cell fragment" data-fragment-index="5">"Silvio"</span></span></div>
+							<div><span class="cell fragment" data-fragment-index="4">15</span></div>
+							<div><span class="cell fragment" data-fragment-index="4">34</span></div>
+							<div><span class="cell fragment" data-fragment-index="3">15</span></div>
+							<div><span class="cell fragment" data-fragment-index="2">34</span></div>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Queue: example</h2>
+					<p class="tc"><img class="hl" src="img/queue.png" /></p>
+				</section>
+				
+				<section>
+					<h2>Queue: definition</h2>
+					<p>A queue is a is a kind of list seen from a particular perspective, i.e. from <span class="fragment highlight-red">left to right</span>, and with a specific set of operations</p>
+					<p class="fragment">The elements follow a <em class="fragment highlight-red">first in first out</em> strategy (FIFO) for addition and removal</p>
+					<p class="fragment">The first element is placed in the left-most part of the queue and, thus, it is also the first one that will be removed when requested</p>
+					<p class="fragment">For removing the element in the middle of the queue one has to remove all the elements that have been added <span class="fragment highlight-red">before</span> such middle element</p>
+				</section>
+				
+				<section>
+					<h2>Queue: methods</h2>
+					<p>Create a new queue: <code>deque()</code></p>
+					<p class="fragment">Add new element: <code>&lt;queue>.append(&lt;element>)</code></p>
+					<p class="fragment">Remove (and return) first element: <code>&lt;queue>.leftpop()</code></p>
+					<p class="fragment">Add elements from another queue: <code>&lt;queue>.extend(&lt;another_queue>)</code></p>
+				</section>
+				
+				<section>
+					<h2>Use methods on queue</h2>
+					<pre><span class="fragment" data-fragment-index="1">my_first_queue = deque()</span>
+<span class="fragment" data-fragment-index="2">my_first_queue.append(34)</span>
+<span class="fragment" data-fragment-index="3">my_first_queue.append(15)</span>
+<span class="fragment" data-fragment-index="4">my_first_queue.append("Silvio")</span>
+<span class="fragment" data-fragment-index="5">my_first_queue.leftpop()</span>
+<span class="fragment" data-fragment-index="6">my_first_queue.extend(my_first_queue)</span></pre>
+					<p>
+						<code class="fragment" data-fragment-index="1">my_first_queue = </code>
+						<span class="fragment fade-out" data-fragment-index="5"><span class="cell fragment" data-fragment-index="2">34</span></span>
+						<span class="cell fragment" data-fragment-index="3">15</span>
+						<span class="cell fragment" data-fragment-index="4">"Silvio"</span>
+						<span class="cell fragment" data-fragment-index="6">15</span>
+						<span class="cell fragment" data-fragment-index="6">"Silvio"</span>
+					</p>
+				</section>
+				
+				<section class="title_slide">
+					<h2>
+						END
+						<span class="subtitle">Organising information: ordered structures</span>
+					</h2>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
