@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Brute-force algorithms</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/ctc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/addon.css"></link>
+		<link rel="stylesheet" href="css/font-awesome.min.css"></link>
+		<link rel="stylesheet" href="css/academicons.min.css"></link>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="title" class="title_slide" role="doc-cover">
+					<h1>Brute-force algorithms</h1>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+						<p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Communication 1</h2>
+					<p>All the Google Docs documents with the lectures notes are now open for comments</p>
+				</section>
+				
+				<section>
+					<h2>Any question about the previous lecture?</h2>
+				</section>
+				
+				<section>
+					<h2>Historic hero: Betty Holberton</h2>
+					<img class="wm fr mlm" src="img/holberton.jpg" />
+					<p>She was one of the programmers of the earliest electronic and general-purpose computer, the ENIAC</p>
+					<p class="fragment">She was involved in the development of several programming languages, such as COBOL and FORTRAN</p>
+					<p class="fragment">She was the creator of the first statistical analysis tool</p>
+					<p class="fragment">A huge part of her work about the development of algorithms for sorting the elements in a list</p>
+				</section>
+				
+				<section>
+					<h2>Why sorting is important</h2>
+					<p>Sorting things is expensive, in particular if you have to order billions of items</p>
+					<p>However, having such items sorted is crucial for several <span class="fragment highlight-red">additional</span> kinds of tasks that we can perform</p>
+					<p class="fragment">Library: books are clustered according to Dewey classification, and each cluster contains books ordered according to the authors' name and the book title</p>
+					<p class="fragment">In this way a librarian can find a requested title avoiding to look all the billion books available one by one, thus saving a huge amount of time</p>
+				</section>
+				
+				<section>
+					<h2 class="bbt">Addressing computational problems</h2>
+					<p>Problem-solving: the activity of <span class="fragment highlight-red">creating an algorithm</span> for solving some given <span class="fragment highlight-red">computational problem</span>, e.g. ordering alphabetically all the books in a library</p>
+					<div class="fragment">
+						<p>Categories of problem-solving methods:</p>
+						<ul>
+							<li><p class="fragment highlight-red">brute-force</p></li>
+							<li><p>divide and conquer</p></li>
+							<li><p>dynamic programming</p></li>
+							<li><p>backtracking</p></li>
+							<li><p>greedy</p></li>
+							<li><p>...</p></li>
+						</ul>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Brute-force approach</h2>
+					<p>Brute-force algorithm: a process that reaches the perfect solution of a problem by analysing <span class="fragment highlight-red">all</span> the possible candidates that may provide a solution to a certain computational problem, and then <span class="fragment highlight-red">check</span> if each candidate solves the problem question</p>
+					<p class="fragment">Advantages: simple, it finds a solution always</p>
+					<p class="fragment">Disadvantages: costly for large inputs</p>
+					<p class="fragment">Suggestion: use brute-force algorithms when the problem size is small</p>
+				</section>
+				
+				<section>
+					<h2>Big solution spaces</h2>
+					<img class="fragment wm fr mlm" src="img/go.jpg" data-fragment-index="1" />
+					<p>Abstract strategy board games are computational problems that have a quite huge solution space</p>
+					<p class="fragment" data-fragment-index="1">Develop a brute-force algorithm which is able to play appropriately Go means to consider all the possible legal moves that are available on the board</p>
+					<p class="fragment sst">Number of all the possible legal moves in Go: 208168199381979984699478633344862770286522453884530548425639456820927419612738015378525648451698519643907259916015628128546089888314427129715319317557736620397247064840935</p>
+					<p class="fragment">Avoid brute-force for these kinds of problems</p>
+				</section>
+				
+				<section>
+					<h2>Iteration</h2>
+					<p>The usual way for solving computational problems by means of a brute-force approach is to <span class="fragment highlight-red">iterate</span> over a certain input or a block of instructions several times</p>
+					<div class="fragment">
+						<p class="mbs">Foreach loop</p>
+						<pre class="mtn"><code class="python">for item in &lt;collection>:
+    # do something using the current item</code></pre>
+					</div>
+					<div class="fragment">
+						<p class="mbs">While loop</p>
+						<pre class="mtn"><code class="python">while &lt;condition>:
+    # do something until the condition is true</code></pre>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Foreach: an example</h2>
+					<pre><code>def stack_from_list(input_list):
+    output_stack = deque()
+    
+    for item in input_list:
+        output_stack.append(item)
+​
+    return output_stack</code></pre>
+    
+    				<div class="fragment" data-fragment-index="1">
+
+    						<p class="fl">
+    							<code>input_list = </code>
+								<span class="cell fragment highlight-red" data-fragment-index="2">12</span>
+								<span class="cell fragment highlight-red" data-fragment-index="4">15</span>
+								<span class="cell fragment highlight-red" data-fragment-index="6">83</span>
+								<code class="fragment mll" data-fragment-index="1">output_stack =</code>
+							</p>
+
+						<div style="margin-left: 85%">
+							<div><span class="cell fragment" data-fragment-index="7">83</span></div>
+							<div><span class="cell fragment" data-fragment-index="5">15</span></div>
+							<div><span class="cell fragment" data-fragment-index="3">12</span></div>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>While: an example</h2>
+					<pre><code>def run_forever():
+    value = 0
+​
+    while value >= 0:
+        value = value + 1</code></pre>
+        			<p class="fragment" data-fragment-index="0">
+        				<code>value = </code>
+        				<span class="fragment" data-fragment-index="1"><span class="fragment fade-out" data-fragment-index="2">0</span></span>
+        				<span class="fragment" data-fragment-index="2"><span class="fragment fade-out" data-fragment-index="3">1</span></span>
+        				<span class="fragment" data-fragment-index="3"><span class="fragment fade-out" data-fragment-index="4">2</span></span>
+        				<span class="fragment" data-fragment-index="4"><span class="fragment fade-out" data-fragment-index="5">3</span></span>
+        				<span class="fragment" data-fragment-index="5"><span class="fragment fade-out" data-fragment-index="6">4</span></span>
+        				<span class="fragment" data-fragment-index="6">...</span>
+        			</p>
+				</section>
+				
+				<section>
+					<h2>Linear search: description</h2>
+					<p>Computational problem: find the position of the first occurrence of a value within a list</p>
+					<img class="wm fr fragment" src="img/position.png" data-fragment-index="2" />
+					<ol class="fragment wl" data-fragment-index="1">
+						<li><p>Iterate over the items in the input list</p></li>
+						<li><p>Check if each of them is equal to the value we are looking for</p></li>
+						<li><p>Once the value has been found, its position in the list is then returned</p></li>
+						<li><p>If the value is not contained in the list, no position is returned at all</p></li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Ancillary objects and algorithms</h2>
+					<p>Tuple: sequence of values, specified in a precise order - they are different from lists since they cannot be modified</p>
+					<pre><code>my_tuple = (1, "a", 2, ...)</code></pre>
+					<div class="fragment">
+						<p>The function <code>enumerate(&lt;list>)</code> returns an enumeration (i.e. a kind of list) of tuples, with two elements each: the first element is the position of the item in consideration in the list, while the second element is the item itself</p>
+						<pre><code class="python">my_list = list()
+my_list.append("a")
+my_list.append("b")
+my_list.append("c")
+enumerate(my_list)
+# it will return the following enumeration of tuples:
+# enumerate([(0, "a"), (1, "b"), (2, "c")])</code></pre>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Decoupling tuples in foreach</h2>
+					<p>Python allows us to decouple the items in a tuple by specifying names for each item with variables created in the <code>for</code> statement on-the-fly</p>
+					<p>For instance,<br /><code>for position, item in enumerate(my_list)</code><br />will assign (the number in the following list refers to the particular iteration of the foreach loop):</p>
+					<ol class="fragment">
+						<li><p><code>position = 0</code> and <code>item = "a"</code></p></li>
+						<li class="fragment"><p><code>position = 1</code> and <code>item = "b"</code></p></li>
+						<li class="fragment"><p><code>position = 2</code> and <code>item = "c"</code></p></li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Linear search: algorithm</h2>
+					<pre><code>def linear_search(input_list, value_to_search):​  
+    for ​position, item in enumerate(input_list):
+        if item == value_to_search:
+            return position</code></pre>
+            	<p>In Python, <code>None</code> (that means <em>nothing</em>) is returned if no <code>return</code> statement is executed</p>
+				</section>
+				
+				<section>
+					<section data-transition="slide-in fade-out">
+						<h2>Insertion sort: description</h2>
+						<p>Computational problem: sort all the items in a given list</p>
+						<p class="tc fragment"><img src="img/insertion-01.png" /></p>
+					</section>
+				
+					<section data-transition="fade-in">
+						<h2>Insertion sort: description</h2>
+						<p>Computational problem: sort all the items in a given list</p>
+						<p class="tc"><img src="img/insertion-02.png" /></p>
+					</section>
+				
+					<section data-transition="fade-in">
+						<h2>Insertion sort: description</h2>
+						<p>Computational problem: sort all the items in a given list</p>
+						<p class="tc"><img src="img/insertion-03.png" /></p>
+					</section>
+				
+					<section data-transition="fade-in">
+						<h2>Insertion sort: description</h2>
+						<p>Computational problem: sort all the items in a given list</p>
+						<p class="tc"><img src="img/insertion-04.png" /></p>
+					</section>
+				
+					<section data-transition="fade-in">
+						<h2>Insertion sort: description</h2>
+						<p>Computational problem: sort all the items in a given list</p>
+						<p class="tc"><img src="img/insertion-05.png" /></p>
+					</section>
+				
+					<section data-transition="fade-in">
+						<h2>Insertion sort: description</h2>
+						<p>Computational problem: sort all the items in a given list</p>
+						<p class="tc"><img src="img/insertion-06.png" /></p>
+					</section>
+				</section>
+				
+				<section>
+					<h2>Useful functions</h2>
+					<p class="mbs"><code>range(&lt;stop_number>)</code> returns the range (i.e. a kind of list) of all numbers from 0 to the one preceding the stop number</p>
+					<p class="mtn sst">E.g.: <code>range(3)</code> returns <code>range([0, 1, 2])</code>, while <code>range(0)</code> returns an empty range</p>
+					<div class="fragment">
+						<p class="mbs"><code>reversed(&lt;input_list>)</code> returns an iterator of the list as if all the elements are sorted in the opposite order</p>
+						<p class="mtn sst">E.g.: considering <code>my_list = list([0, 1, 2])</code>, <code>reversed(my_list)</code> returns <code>iterator([2, 1, 0])</code></p>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Get and insert items by position</h2>
+					<p class="mbs"><code>&lt;list>[&lt;position>]</code> returns the item in the list at that particular position</p>
+					<p class="mtn sst">E.g.: considering <code>my_list = list(["a", "b", "c"])</code>, <code>my_list[1]</code> returns <code>"b"</code></p>
+					<div class="fragment">
+						<p>The method <code>&lt;list>.insert(&lt;position>, &lt;item>)</code> puts &lt;item> in the position specified, and it shifts all the following elements</p>
+						<p class="mtn sst">E.g.: <code>my_list.insert(1, "d")</code> modifies <code>my_list</code> as <code>list(["a", "d", "b", "c"])</code></p>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Insertion sort: algorithm</h2>
+					<pre><code class="python">def insertion_sort(input_list):
+    result = list()
+
+    for item in input_list:
+        insert_position = len(result)
+
+        for prev_position in reversed(range(insert_position)):
+            if item < result[prev_position]:
+                insert_position = prev_position
+
+        result.insert(insert_position, item)
+
+    return result</code></pre>
+				</section>
+				
+				<section class="title_slide">
+					<h2>
+						END
+						<span class="subtitle">Brute-force algorithms</span>
+					</h2>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
