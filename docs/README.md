@@ -68,7 +68,14 @@ This space contains all the material related to the [Computational Thinking and 
    * exercises: [1](https://github.com/comp-think/2018-2019/issues/15), [2](https://github.com/comp-think/2018-2019/issues/16), [3](https://github.com/comp-think/2018-2019/issues/17), [4](https://github.com/comp-think/2018-2019/issues/18), [5](https://github.com/comp-think/2018-2019/issues/19)
    * Python: [stack_from_list.py](http://comp-think.github.io/2018-2019/python/stack_from_list.py), [run_forever.py](http://comp-think.github.io/2018-2019/python/run_forever.py), [linear_search.py](http://comp-think.github.io/2018-2019/python/linear_search.py), [insertion_sort.py](http://comp-think.github.io/2018-2019/python/insertion_sort.py)
    * additional material:
-       * video ["15 Sorting Algorithms in 6 Minutes"](https://www.youtube.com/watch?v=kPRA0W1kECg) 
+       * video ["15 Sorting Algorithms in 6 Minutes"](https://www.youtube.com/watch?v=kPRA0W1kECg)
+   <hr />
+
+6. [27/11/18, *lab*] 1st Lesson
+    * content: [GitHub](https://github.com/marilenadaquino/computational_thinking/tree/master/ay-2018-2019/2_3_lesson)
+    * exercises: [Jupyter notebook](https://github.com/marilenadaquino/computational_thinking/blob/master/ay-2018-2019/2_3_lesson/Exercise_2.ipynb), [Python](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/2_3_lesson/2_3_exercise.py) 
+    * additional material:
+        * CSV file: [titles.csv](https://github.com/marilenadaquino/computational_thinking/blob/master/ay-2018-2019/2_3_lesson/titles.csv)
 
 ### Schedule
 
