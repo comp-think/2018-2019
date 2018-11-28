@@ -35,13 +35,13 @@ my_first_dict.get("age")  # get the value associated to "age"
 # the returned result will be None in this case
 
 # the following lines create a new dictionary with two pairs
-my_second_dictionary = dict()
-my_second_dictionary["month of birth"] = 12
-my_second_dictionary["day of birth"] = 28
+my_second_dict = dict()
+my_second_dict["month of birth"] = 12
+my_second_dict["day of birth"] = 28
 
 # it adds a new pair to the current dictionary, and rewrite the value
 # associated to the key ""day of birth" with the one specified
-my_first_dict.update(my_second_dictionary)
+my_first_dict.update(my_second_dict)
 # current status of my_first_dict:
 # dict({"day of birth": 28, "name": "Silvio", "day of month": 12})
 
