@@ -76,6 +76,7 @@ This space contains all the material related to the [Computational Thinking and 
     * exercises: [Jupyter notebook](https://github.com/marilenadaquino/computational_thinking/blob/master/ay-2018-2019/2_3_lesson/Exercise_2.ipynb), [Python](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/2_3_lesson/2_3_exercise.py) 
     * additional material:
         * CSV file: [titles.csv](https://github.com/marilenadaquino/computational_thinking/blob/master/ay-2018-2019/2_3_lesson/titles.csv)
+    <hr />
 
 10. [28/11/18, *the*] Organising information: unordered structures
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/07%20-%20Organising%20information%20-%20unordered%20structures.html)
