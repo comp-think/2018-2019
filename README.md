@@ -14,6 +14,7 @@ This space contains all the material related to the [Computational Thinking and 
 **Keys:** 
 * *the* = theoretical lecture
 * *lab* = laboratory session
+* *exa* = partial examination
 
 1. [12/11/18, *the*] Introduction to the course
    * slides ([HTML](https://comp-think.github.io/2018-2019/slides/00%20-%20Course%20introduction.html))
@@ -78,7 +79,11 @@ This space contains all the material related to the [Computational Thinking and 
         * CSV file: [titles.csv](https://github.com/marilenadaquino/computational_thinking/blob/master/ay-2018-2019/2_3_lesson/titles.csv)
     <hr />
 
-10. [28/11/18, *the*] Organising information: unordered structures
+10. [28/11/18, *exa*] First partial examination
+    * content: [test 1](https://comp-think.github.io/2018-2019/exams/first-partial-examination-01.pdf), [test 2](https://comp-think.github.io/2018-2019/exams/first-partial-examination-02.pdf)
+    <hr />
+
+11. [28/11/18, *the*] Organising information: unordered structures
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/07%20-%20Organising%20information%20-%20unordered%20structures.html)
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/07%20-%20Organising%20information%20-%20unordered%20structures.pdf), [Google Docs](https://tinyurl.com/comp-think-07)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/20), [2](https://github.com/comp-think/2018-2019/issues/21), [3](https://github.com/comp-think/2018-2019/issues/22)
