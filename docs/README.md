@@ -25,6 +25,7 @@ This space contains all the material related to the [Computational Thinking and 
    * exercises: [1](https://github.com/comp-think/2018-2019/issues/1), [2](https://github.com/comp-think/2018-2019/issues/2), [3](https://github.com/comp-think/2018-2019/issues/3)
    * additional material:
        * [tweet](https://twitter.com/essepuntato/status/1063745214706266113) on the result of the task *describe your idea of this course with one word*
+       * article ["Is abstraction the key to computing?"](https://www.ics.uci.edu/~andre/informatics223s2007/kramer.pdf) by Kramer (DOI: [10.1145/1232743.1232745](https://doi.org/10.1145/1232743.1232745))
    <hr />
 
 3. [14/11/18, *the*] Algorithms
@@ -38,9 +39,9 @@ This space contains all the material related to the [Computational Thinking and 
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/03%20-%20Computability.pdf), [Google Docs](https://tinyurl.com/comp-think-03)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/7), [2](https://github.com/comp-think/2018-2019/issues/8)
     * additional material: 
-        * article ["Statistical mechanics of cellular automata"](https://journals.aps.org/rmp/pdf/10.1103/RevModPhys.55.601) by Wolfram
+        * article ["Statistical mechanics of cellular automata"](https://journals.aps.org/rmp/pdf/10.1103/RevModPhys.55.601) by Wolfram (DOI: [10.1103/RevModPhys.55.601](https://doi.org/10.1103/RevModPhys.55.601))
         * section on ["Turing machines"](https://www.wolframscience.com/nks/p184--turing-machines/) of the book "A new kind of science" by Wolfram
-        * article ["Alan Turing’s Legacy: Info-Computational Philosophy of Nature"](https://arxiv.org/ftp/arxiv/papers/1207/1207.1033.pdf) by Dodig-Crnkovic
+        * article ["Alan Turing’s Legacy: Info-Computational Philosophy of Nature"](https://arxiv.org/ftp/arxiv/papers/1207/1207.1033.pdf) by Dodig-Crnkovic (DOI: [10.1007/978-3-642-37225-4_6](https://doi.org/10.1007/978-3-642-37225-4_6))
     <hr />
 
 5. [19/11/18, *the*] Programming languages
