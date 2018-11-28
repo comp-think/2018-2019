@@ -113,8 +113,8 @@ This space contains all the material related to the [Computational Thinking and 
     <tr><td>11/12/18</td><td><span>Laboratory</span></td></tr>
     <tr><td>12/12/18</td><td>Backtracking algorithms</td></tr>
     <tr><td>13/12/18</td><td><span>Laboratory</span></td></tr>
-    <tr><td>14/12/18</td><td>Project presentation</td></tr>
-    <tr><td>17/12/18</td><td>Organising information: graphs</td></tr>
+    <tr><td>14/12/18</td><td>Organising information: graphs</td></tr>
+    <tr><td>17/12/18</td><td>Project presentation</td></tr>
     <tr><td>18/12/18</td><td><span>Laboratory</span></td></tr>
     <tr><td>19/12/18</td><td>Greedy algorithms</td></tr>
 </table>
