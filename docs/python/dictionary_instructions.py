@@ -40,10 +40,10 @@ my_second_dict["month of birth"] = 12
 my_second_dict["day of birth"] = 28
 
 # it adds a new pair to the current dictionary, and rewrite the value
-# associated to the key ""day of birth" with the one specified
+# associated to the key "day of birth" with the one specified
 my_first_dict.update(my_second_dict)
 # current status of my_first_dict:
-# dict({"day of birth": 28, "name": "Silvio", "day of month": 12})
+# dict({"day of birth": 28, "name": "Silvio", "month of birth": 12})
 
 # it stores 3 in my_first_dict_len
 my_first_dict_len = len(my_first_dict)
