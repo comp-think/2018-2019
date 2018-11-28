@@ -59,7 +59,7 @@ This space contains all the material related to the [Computational Thinking and 
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/05%20-%20Organising%20information%20-%20ordered%20structures.html)
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/05%20-%20Organising%20information%20-%20ordered%20structures.pdf), [Google Docs](https://tinyurl.com/comp-think-05)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/12), [2](https://github.com/comp-think/2018-2019/issues/13), [3](https://github.com/comp-think/2018-2019/issues/14)
-    * Python: [define_functions.py](http://comp-think.github.io/2018-2019/python/define_functions.py), [list_introduction.py](http://comp-think.github.io/2018-2019/python/list_instructions.py), [stack_instructions.py](http://comp-think.github.io/2018-2019/python/stack_instructions.py), [queue_instructions.py](http://comp-think.github.io/2018-2019/python/queue_instructions.py)
+    * Python: [define_functions.py](http://comp-think.github.io/2018-2019/python/define_functions.py), [list_instructions.py](http://comp-think.github.io/2018-2019/python/list_instructions.py), [stack_instructions.py](http://comp-think.github.io/2018-2019/python/stack_instructions.py), [queue_instructions.py](http://comp-think.github.io/2018-2019/python/queue_instructions.py)
     <hr />
 
 8. [26/11/18, *the*] Brute-force algorithms
@@ -71,11 +71,17 @@ This space contains all the material related to the [Computational Thinking and 
        * video ["15 Sorting Algorithms in 6 Minutes"](https://www.youtube.com/watch?v=kPRA0W1kECg)
    <hr />
 
-6. [27/11/18, *lab*] 1st Lesson
+9. [27/11/18, *lab*] 1st Lesson
     * content: [GitHub](https://github.com/marilenadaquino/computational_thinking/tree/master/ay-2018-2019/2_3_lesson)
     * exercises: [Jupyter notebook](https://github.com/marilenadaquino/computational_thinking/blob/master/ay-2018-2019/2_3_lesson/Exercise_2.ipynb), [Python](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/2_3_lesson/2_3_exercise.py) 
     * additional material:
         * CSV file: [titles.csv](https://github.com/marilenadaquino/computational_thinking/blob/master/ay-2018-2019/2_3_lesson/titles.csv)
+
+10. [28/11/18, *the*] Organising information: unordered structures
+    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/07%20-%20Organising%20information%20-%20unordered%20structures.html)
+    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/07%20-%20Organising%20information%20-%20unordered%20structures.pdf), [Google Docs](https://tinyurl.com/comp-think-07)
+    * exercises: [1](https://github.com/comp-think/2018-2019/issues/20), [2](https://github.com/comp-think/2018-2019/issues/21), [3](https://github.com/comp-think/2018-2019/issues/22)
+    * Python: [set_instructions.py](http://comp-think.github.io/2018-2019/python/set_instructions.py), [dictionary_instructions.py](http://comp-think.github.io/2018-2019/python/dictionary_instructions.py)
 
 ### Schedule
 
