@@ -92,6 +92,7 @@ This space contains all the material related to the [Computational Thinking and 
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/07%20-%20Organising%20information%20-%20unordered%20structures.pdf), [Google Docs](https://tinyurl.com/comp-think-07)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/20), [2](https://github.com/comp-think/2018-2019/issues/21), [3](https://github.com/comp-think/2018-2019/issues/22)
     * Python: [set_instructions.py](http://comp-think.github.io/2018-2019/python/set_instructions.py), [dictionary_instructions.py](http://comp-think.github.io/2018-2019/python/dictionary_instructions.py)
+    <hr />
 
 12. [30/11/18, *the*] Recursion
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/08%20-%20Recursion.html)
