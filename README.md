@@ -26,6 +26,9 @@ This space contains all the material related to the [Computational Thinking and 
    * additional material:
        * [tweet](https://twitter.com/essepuntato/status/1063745214706266113) on the result of the task *describe your idea of this course with one word*
        * article ["Is abstraction the key to computing?"](https://www.ics.uci.edu/~andre/informatics223s2007/kramer.pdf) by Kramer (DOI: [10.1145/1232743.1232745](https://doi.org/10.1145/1232743.1232745))
+       * book [Computational Historical Thinking](https://dh-r.lincolnmullen.com/) by Mullen
+       * article ["Studying How the Past is Remembered: Towards Computational History through Large Scale Text Mining"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.422.1205&rep=rep1&type=pdf) by Yeung and Jatowt (DOI: [10.1145/2063576.2063755](https://doi.org/10.1145/2063576.2063755))
+       * post ["How the New Science of Computational History Is Changing the Study of the Past"](https://www.technologyreview.com/s/601763/how-the-new-science-of-computational-history-is-changing-the-study-of-the-past/) on MIT Technology Review
    <hr />
 
 3. [14/11/18, *the*] Algorithms
@@ -53,7 +56,7 @@ This space contains all the material related to the [Computational Thinking and 
         * [solution to exercise 3](http://comp-think.github.io/2018-2019/python/first_algorithm_ex3.py)
     <hr />
 
-6. [22/11/18, *lab*] Install Python with Anaconda and PyCharm
+6. [22/11/18, *lab*] 1st Lesson
     * instructions: [GitHub](https://github.com/marilenadaquino/computational_thinking/tree/master/ay-2018-2019/1_lesson)
     <hr />
 
@@ -73,7 +76,7 @@ This space contains all the material related to the [Computational Thinking and 
        * video ["15 Sorting Algorithms in 6 Minutes"](https://www.youtube.com/watch?v=kPRA0W1kECg)
    <hr />
 
-9. [27/11/18, *lab*] 1st Lesson
+9. [27/11/18, *lab*] 2nd Lesson
     * content: [GitHub](https://github.com/marilenadaquino/computational_thinking/tree/master/ay-2018-2019/2_3_lesson)
     * exercises: [Jupyter notebook](https://github.com/marilenadaquino/computational_thinking/blob/master/ay-2018-2019/2_3_lesson/Exercise_2.ipynb), [Python](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/2_3_lesson/2_3_exercise.py) 
     * additional material:
@@ -89,6 +92,12 @@ This space contains all the material related to the [Computational Thinking and 
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/07%20-%20Organising%20information%20-%20unordered%20structures.pdf), [Google Docs](https://tinyurl.com/comp-think-07)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/20), [2](https://github.com/comp-think/2018-2019/issues/21), [3](https://github.com/comp-think/2018-2019/issues/22)
     * Python: [set_instructions.py](http://comp-think.github.io/2018-2019/python/set_instructions.py), [dictionary_instructions.py](http://comp-think.github.io/2018-2019/python/dictionary_instructions.py)
+
+12. [30/11/18, *the*] Recursion
+    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/08%20-%20Recursion.html)
+    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/08%20-%20Recursion.pdf), [Google Docs](https://tinyurl.com/comp-think-08)
+    * exercises: [1](https://github.com/comp-think/2018-2019/issues/23), [2](https://github.com/comp-think/2018-2019/issues/24)
+    * Python: [run_forever_recursive.py](http://comp-think.github.io/2018-2019/python/run_forever_recursive.py), [multiplication.py](http://comp-think.github.io/2018-2019/python/multiplication.py)
 
 ### Schedule
 
@@ -114,7 +123,7 @@ This space contains all the material related to the [Computational Thinking and 
     <tr><td>12/12/18</td><td>Backtracking algorithms</td></tr>
     <tr><td>13/12/18</td><td><span>Laboratory</span></td></tr>
     <tr><td>14/12/18</td><td>Organising information: graphs</td></tr>
-    <tr><td>17/12/18</td><td>Project presentation</td></tr>
+    <tr><td>17/12/18</td><td>Project presentation <strong>(time change: 11:30-13:30)</strong></td></tr>
     <tr><td>18/12/18</td><td><span>Laboratory</span></td></tr>
     <tr><td>19/12/18</td><td>Greedy algorithms</td></tr>
 </table>

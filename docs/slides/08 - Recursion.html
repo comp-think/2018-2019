@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Recursion</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/ctc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/addon.css"></link>
+		<link rel="stylesheet" href="css/font-awesome.min.css"></link>
+		<link rel="stylesheet" href="css/academicons.min.css"></link>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="title" class="title_slide" role="doc-cover">
+					<h1>Recursion</h1>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+						<p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></p>
+					</div>
+				</section>
+
+                <section>
+					<h2>Communication 1</h2>
+                    <p>Swapping lectures:</p>
+					<ul>
+                        <li>14/12/18: Organising information: graphs</li>
+                        <li>17/12/18: Project presentation (<strong>11:30-13:30</strong>)</li>
+                    </ul>
+				</section>
+
+				<section>
+					<h2>Communication 2</h2>
+					<p>Clarification on <strong>test-driven development</strong>: all the tests <span class="fragment highlight-red">must be</span> passed in order to claim that an algorithm returns what it is expected</p>
+                    <p>If a test execution return <em>False</em>, the test <span class="fragment highlight-red">is not</span> passed</p>
+                    <p>If you need to check the non-compliancy of the execution of a function on purpose, then you have to create an additional testing function that returns <em>True</em> if the condition of the test is not passed</p>
+                    <p>Remeber: <span class="fragment highlight-red">first</span> write the test, then develop the algorithm/function</p>
+				</section>
+				
+				<section>
+					<h2>Any question about the previous lecture?</h2>
+				</section>
+				
+				<section>
+					<h2 class="bbt">Historic hero: Douglas Hofstadter</h2>
+					<img class="wm fr mlm" src="img/hofstadter.jpg" />
+					<p>He is a cognitive scientist</p>
+					<p>Research on self-reference: situations where something refers to itself</p>
+					<p class="fragment">Author of <em>Gödel, Escher, Bach: An Eternal Golden Braid</em> where he investigated in depth the concept of self-reference</p>
+					<p class="fragment">In 1980, he was awarded of the Pulitzer's for that book</p>
+					<p class="fragment">One of the main book themes: concept of intelligence (including artificial intelligence)</p>
+				</section>
+				
+				<section>
+					<h2>Little Harmonic Labyrinth</h2>
+					<img class="wm fr mlm" src="img/convex.jpg" />
+					<p>Achilles and the Tortoise's adventures in entering in the inconsistent composite world depicted by Escher's <em>Convex and Concave</em></p>
+					<p class="fragment">Entering into and exiting from a world via the <em>pushing-potion</em> and <em>popping-tonic</em> respectively</p>
+					<p class="fragment">Achilles and the Tortoise narrate (or are part of) a lot of stories, which include citations and references as well as self-citations and self-references</p>
+				</section>
+				
+				<section>
+					<h2>The genies and the lamps</h2>
+					<div class="st">
+						<p>Achilles uses of a magic lamp and evokes a genie</p>
+						<p class="fragment">First wish: to have one hundred of wishes instead of the usual three</p>
+						<p class="fragment">Genie: not possible for him, it's a meta-wish (i.e. a wish of a wish). It uses its meta-lamp to ekove the meta-genie asking for the same meta-wish</p>
+						<p class="fragment">Meta-genie: not possible for him, it's a meta-meta-wish (i.e. a wish of a wish of a wish). It uses its meta-meta-lamp to ekove the meta-meta-genie</p>
+						<p class="fragment">...</p>
+						<p class="fragment">Positive answer: Achilles is granted with the permission</p>
+						<p class="fragment">Achilles <span class="fragment highlight-red">wishes</span> that his <span class="fragment highlight-red">wish</span> would <span class="fragment highlight-red">not</span> be granted</p>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Self-references for paradoxes</h2>
+					<p>Achilles' wish concerns the denial of the wish it self, which results in a paradox by means of a self-reference</p>
+					<p class="fragment" data-fragment-index="1">Other notable examples of self-references:</p>
+					<img class="fragment fr mlm" src="img/hands.jpg" data-fragment-index="3" />
+					<ul class="wl">
+						<li class="fragment" data-fragment-index="2"><p>Natural language:<br/><q>this sentence is false</q></p></li>
+						<li class="fragment" data-fragment-index="3"><p>Graphical language:<br/>Escher's <em>Drawing hands</em></p></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Recursion</h2>
+					<p>We have a <em>recursion</em> when something is defined in terms of itself or of its type – i.e. when its definition contains a self-reference</p>
+					<p class="fragment">Do we use it in our daily life?</p>
+					<div class="fragment">
+						<p>Linguistics: recursive rules in formal grammars</p>
+						<pre><code class="st">&lt;boolean_expression> ::= "(" "not" ​&lt;boolean_expression> ")"
+&lt;boolean_expression> ::= "(" &lt;boolean_expression> "or" &lt;boolean_expression> ")"
+&lt;boolean_expression> ::= "(" &lt;boolean_expression> "and" &lt;boolean_expression> ")"
+&lt;boolean_expression> ::= "True"
+&lt;boolean_expression> ::= "False"</code></pre>
+					</div>
+					<p class="fragment">Chomsky argued that recusion is essential in human language: <span class="fragment highlight-current-red">Alice thinks <span class="fragment highlight-current-blue">Bob said <span class="fragment highlight-current-green">Christine read books</span></span></span></p>
+				</section>
+				
+				<section>
+					<h2>Mirrors and sounds</h2>
+					<p class="tc"><img src="img/recursion.png" /></p>
+				</section>
+				
+				<section>
+					<h2>Recursion in Computer Science</h2>
+					<p>It is an alternative to the iteration (i.e. foreach and while loops)</p>
+					<p>It is often used when a <span class="fragment highlight-red">solution</span> to a particular computational problem depends on the <span class="fragment highlight-red">partial solutions</span> of smaller instances of the <span class="fragment highlight-red">same problem</span></p>
+					<p class="fragment">Computer Scientists tame recursion to avoid infinite loops:</p>
+					<ol class="fragment">
+						<li><p>one or more base cases, which describe the terminating scenarios</p></li>
+						<li class="fragment"><p>one or more recursion steps, where the algorithm is run gain with a reduced input</p></li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>What could possibly go wrong?</h2>
+					<pre><code class="python">def run_forever_recursive():
+    run_forever_recursive()</code></pre>
+    				<p>The <code>run_forever</code> algorithm implemented by means of a recursion step – with no base cases</p>
+				</section>
+				
+				<section>
+					<h2>Recursive algorithm: an example</h2>
+					<p>Computational problem: multiply two non-negative integers</p>
+					<p>E.g.: 3 * 4 = 3 + 3 + 3 + 3</p>
+					<p class="fragment"><span class="fragment highlight-red">n1</span> * <span class="fragment highlight-blue">n2</span> = <span class="fragment highlight-red">n1</span> + (<span class="fragment highlight-red">n1</span> * (<span class="fragment highlight-blue">n2</span> - 1))</p>
+					<pre class="fragment"><span class="fragment highlight-red">3</span> * <span class="fragment highlight-blue">4</span> =
+<span class="fragment">3 + (<span class="fragment highlight-red">3</span> * (<span class="fragment highlight-blue">4 - 1</span>)) =</span>
+<span class="fragment">3 + (3 + (<span class="fragment highlight-red">3</span> * (<span class="fragment highlight-blue">4 - 2</span>))) =</span>
+<span class="fragment">3 + (3 + (3 + (<span class="fragment highlight-red">3</span> * (<span class="fragment highlight-blue">4 - 3</span>)))) =</span>
+<span class="fragment">3 + (3 + (3 + (3 + (3 * (<span class="fragment highlight-green">4 - 4</span>))))) =</span>
+<span class="fragment">3 + 3 + 3 + 3 + 0 =</span>
+<span class="fragment">12</span>
+</pre>
+				</section>
+				
+				<section>
+					<h2>Multiplication: the algorithm</h2>
+					<pre><code class="python">def multiplication(int_1, int_2):
+    if int_2 == 0:
+        return 0
+    else:
+        return int_1 + multiplication(int_1, int_2 - 1)</code></pre>
+				</section>
+				
+				<section class="title_slide">
+					<h2>
+						END
+						<span class="subtitle">Recursion</span>
+					</h2>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
