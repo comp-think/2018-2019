@@ -53,7 +53,7 @@ This space contains all the material related to the [Computational Thinking and 
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/9), [2](https://github.com/comp-think/2018-2019/issues/10), [3](https://github.com/comp-think/2018-2019/issues/11)
     * Python: [first_algorithm.py](http://comp-think.github.io/2018-2019/python/first_algorithm.py)
     * additional material:
-        * [solution to exercise 3](http://comp-think.github.io/2018-2019/python/first_algorithm_ex3.py)
+        * solutions to Python exercises: [3](https://comp-think.github.io/2018-2019/python/first_algorithm_ex3.py)
     <hr />
 
 6. [22/11/18, *lab*] 1st Lesson
@@ -74,6 +74,7 @@ This space contains all the material related to the [Computational Thinking and 
    * Python: [stack_from_list.py](http://comp-think.github.io/2018-2019/python/stack_from_list.py), [run_forever.py](http://comp-think.github.io/2018-2019/python/run_forever.py), [linear_search.py](http://comp-think.github.io/2018-2019/python/linear_search.py), [insertion_sort.py](http://comp-think.github.io/2018-2019/python/insertion_sort.py)
    * additional material:
        * video ["15 Sorting Algorithms in 6 Minutes"](https://www.youtube.com/watch?v=kPRA0W1kECg)
+       * solutions to Python exercises: [2](https://comp-think.github.io/2018-2019/python/stack_from_list_ex2.py), [3](https://comp-think.github.io/2018-2019/python/my_enumerate_ex3.py), [4](https://comp-think.github.io/2018-2019/python/my_range_ex3.py), [5](https://comp-think.github.io/2018-2019/python/my_reversed_ex5.py)
    <hr />
 
 9. [27/11/18, *lab*] 2nd Lesson
