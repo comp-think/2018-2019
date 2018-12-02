@@ -51,7 +51,7 @@ This space contains all the material related to the [Computational Thinking and 
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/04%20-%20Programming%20languages.html)
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/04%20-%20Programming%20languages.pdf), [Google Docs](https://tinyurl.com/comp-think-04)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/9), [2](https://github.com/comp-think/2018-2019/issues/10), [3](https://github.com/comp-think/2018-2019/issues/11)
-    * Python: [first_algorithm.py](http://comp-think.github.io/2018-2019/python/first_algorithm.py)
+    * Python: [first_algorithm.py](https://comp-think.github.io/2018-2019/python/first_algorithm.py)
     * additional material:
         * solutions to Python exercises: [3](https://comp-think.github.io/2018-2019/python/first_algorithm_ex3.py)
     <hr />
@@ -64,14 +64,14 @@ This space contains all the material related to the [Computational Thinking and 
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/05%20-%20Organising%20information%20-%20ordered%20structures.html)
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/05%20-%20Organising%20information%20-%20ordered%20structures.pdf), [Google Docs](https://tinyurl.com/comp-think-05)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/12), [2](https://github.com/comp-think/2018-2019/issues/13), [3](https://github.com/comp-think/2018-2019/issues/14)
-    * Python: [define_functions.py](http://comp-think.github.io/2018-2019/python/define_functions.py), [list_instructions.py](http://comp-think.github.io/2018-2019/python/list_instructions.py), [stack_instructions.py](http://comp-think.github.io/2018-2019/python/stack_instructions.py), [queue_instructions.py](http://comp-think.github.io/2018-2019/python/queue_instructions.py)
+    * Python: [define_functions.py](https://comp-think.github.io/2018-2019/python/define_functions.py), [list_instructions.py](https://comp-think.github.io/2018-2019/python/list_instructions.py), [stack_instructions.py](https://comp-think.github.io/2018-2019/python/stack_instructions.py), [queue_instructions.py](https://comp-think.github.io/2018-2019/python/queue_instructions.py)
     <hr />
 
 8. [26/11/18, *the*] Brute-force algorithms
    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/06%20-%20Brute-force%20algorithms.html)
    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/06%20-%20Brute-force%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-06)
    * exercises: [1](https://github.com/comp-think/2018-2019/issues/15), [2](https://github.com/comp-think/2018-2019/issues/16), [3](https://github.com/comp-think/2018-2019/issues/17), [4](https://github.com/comp-think/2018-2019/issues/18), [5](https://github.com/comp-think/2018-2019/issues/19)
-   * Python: [stack_from_list.py](http://comp-think.github.io/2018-2019/python/stack_from_list.py), [run_forever.py](http://comp-think.github.io/2018-2019/python/run_forever.py), [linear_search.py](http://comp-think.github.io/2018-2019/python/linear_search.py), [insertion_sort.py](http://comp-think.github.io/2018-2019/python/insertion_sort.py)
+   * Python: [stack_from_list.py](https://comp-think.github.io/2018-2019/python/stack_from_list.py), [run_forever.py](https://comp-think.github.io/2018-2019/python/run_forever.py), [linear_search.py](https://comp-think.github.io/2018-2019/python/linear_search.py), [insertion_sort.py](https://comp-think.github.io/2018-2019/python/insertion_sort.py)
    * additional material:
        * video ["15 Sorting Algorithms in 6 Minutes"](https://www.youtube.com/watch?v=kPRA0W1kECg)
        * solutions to Python exercises: [2](https://comp-think.github.io/2018-2019/python/stack_from_list_ex2.py), [3](https://comp-think.github.io/2018-2019/python/my_enumerate_ex3.py), [4](https://comp-think.github.io/2018-2019/python/my_range_ex3.py), [5](https://comp-think.github.io/2018-2019/python/my_reversed_ex5.py)
@@ -86,22 +86,34 @@ This space contains all the material related to the [Computational Thinking and 
 
 10. [28/11/18, *exa*] First partial examination
     * content: [test 1](https://comp-think.github.io/2018-2019/exams/first-partial-examination-01.pdf), [test 2](https://comp-think.github.io/2018-2019/exams/first-partial-examination-02.pdf)
+    * solutions:
+        * exercise 3: [Python script](https://comp-think.github.io/2018-2019/python/turing_machine_1st_partial_ex3.py) to calculate the output of the Turing machine providing - run with `python turing_machine_1st_partial_ex3.py` and follow the instructions
+        * exercise 4: [source](https://comp-think.github.io/2018-2019/python/f_1st_partial_ex4.py) of the function `f`
+        * exercise 5: [implementation](https://comp-think.github.io/2018-2019/python/do_it_1st_partial_ex5.py) of the function `do_it`
     <hr />
 
 11. [28/11/18, *the*] Organising information: unordered structures
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/07%20-%20Organising%20information%20-%20unordered%20structures.html)
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/07%20-%20Organising%20information%20-%20unordered%20structures.pdf), [Google Docs](https://tinyurl.com/comp-think-07)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/20), [2](https://github.com/comp-think/2018-2019/issues/21), [3](https://github.com/comp-think/2018-2019/issues/22)
-    * Python: [set_instructions.py](http://comp-think.github.io/2018-2019/python/set_instructions.py), [dictionary_instructions.py](http://comp-think.github.io/2018-2019/python/dictionary_instructions.py)
+    * Python: [set_instructions.py](https://comp-think.github.io/2018-2019/python/set_instructions.py), [dictionary_instructions.py](https://comp-think.github.io/2018-2019/python/dictionary_instructions.py)
     <hr />
     
 12. [29/11/18, *lab*] 3rd Lesson (included in the material of the 2nd lesson above)
+    <hr />
 
 13. [30/11/18, *the*] Recursion
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/08%20-%20Recursion.html)
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/08%20-%20Recursion.pdf), [Google Docs](https://tinyurl.com/comp-think-08)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/23), [2](https://github.com/comp-think/2018-2019/issues/24)
-    * Python: [run_forever_recursive.py](http://comp-think.github.io/2018-2019/python/run_forever_recursive.py), [multiplication.py](http://comp-think.github.io/2018-2019/python/multiplication.py)
+    * Python: [run_forever_recursive.py](https://comp-think.github.io/2018-2019/python/run_forever_recursive.py), [multiplication.py](https://comp-think.github.io/2018-2019/python/multiplication.py)
+    <hr />
+
+14. [03/12/18, *the*] Divide and conquer algorithms
+    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/09%20-%20Divide%20-%20and%20-%20conquer%20-%20algorithms.html)
+    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/09%20-%20Divide%20-%20and%20-%20conquer%20-%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-09)
+    * exercises: [1](https://github.com/comp-think/2018-2019/issues/25), [2](https://github.com/comp-think/2018-2019/issues/26)
+    * Python: [immutable_values.py](https://comp-think.github.io/2018-2019/python/immutable_values.py), [mutable_values.py](https://comp-think.github.io/2018-2019/python/mutable_values.py), [immutable_and_mutable_variables.py](https://comp-think.github.io/2018-2019/python/immutable_and_mutable_variables.py), [merge.py](https://comp-think.github.io/2018-2019/python/merge.py), [merge_sort.py](https://comp-think.github.io/2018-2019/python/merge_sort.py)
 
 ### Schedule
 
@@ -124,9 +136,9 @@ This space contains all the material related to the [Computational Thinking and 
     <tr><td>06/12/18</td><td><span>Laboratory</span></td></tr>
     <tr><td>10/12/18</td><td>Organising information: trees</td></tr>
     <tr><td>11/12/18</td><td><span>Laboratory</span></td></tr>
-    <tr><td>12/12/18</td><td>Backtracking algorithms</td></tr>
+    <tr><td>12/12/18</td><td>Organising information: graphs (<strong>+ evaluation questionnaire</strong>)</td></tr>
     <tr><td>13/12/18</td><td><span>Laboratory</span></td></tr>
-    <tr><td>14/12/18</td><td>Organising information: graphs</td></tr>
+    <tr><td>14/12/18</td><td>Backtracking algorithms</td></tr>
     <tr><td>17/12/18</td><td>Project presentation <strong>(time change: 11:30-13:30)</strong></td></tr>
     <tr><td>18/12/18</td><td><span>Laboratory</span></td></tr>
     <tr><td>19/12/18</td><td>Greedy algorithms</td></tr>
