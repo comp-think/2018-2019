@@ -88,7 +88,7 @@ This space contains all the material related to the [Computational Thinking and 
     * content: [test 1](https://comp-think.github.io/2018-2019/exams/first-partial-examination-01.pdf), [test 2](https://comp-think.github.io/2018-2019/exams/first-partial-examination-02.pdf)
     * solutions:
         * exercise 3: [Python script](https://comp-think.github.io/2018-2019/python/turing_machine_1st_partial_ex3.py) to calculate the output of the Turing machine providing - run with `python turing_machine_1st_partial_ex3.py` and follow the instructions
-        * exercise 4: [source](https://comp-think.github.io/2018-2019/python/f_1st_partial_ex4.py) of the function `f`
+        * exercise 4: [Python script](https://comp-think.github.io/2018-2019/python/f_1st_partial_ex4.py) to calculate the output of the function `f` - run with `python f_1st_partial_ex4.py` and follow the instructions
         * exercise 5: [implementation](https://comp-think.github.io/2018-2019/python/do_it_1st_partial_ex5.py) of the function `do_it`
     <hr />
 

@@ -14,6 +14,9 @@
 # SOFTWARE.
 
 
+from re import findall
+
+
 def f(cur_digit):
     l = list()
     l.append("a")
@@ -21,7 +24,7 @@ def f(cur_digit):
     l.extend(l)
     l.extend(l)
     l.append("c")
-    for i in range(cur_digit):
+    for i in range(int(cur_digit)):
         if l[i] != "a" and "a" in l:
             l.remove("a")
         else:
@@ -29,4 +32,5 @@ def f(cur_digit):
     return l
 
 
-print(f(9))
+rightmost_digit = "".join(findall("\d", input("Please provide your matriculation number: ")))[-1]
+print("Result:", f(rightmost_digit))
