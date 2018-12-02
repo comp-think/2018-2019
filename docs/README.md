@@ -110,8 +110,8 @@ This space contains all the material related to the [Computational Thinking and 
     <hr />
 
 14. [03/12/18, *the*] Divide and conquer algorithms
-    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/09%20-%20Divide%20-%20and%20-%20conquer%20-%20algorithms.html)
-    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/09%20-%20Divide%20-%20and%20-%20conquer%20-%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-09)
+    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/09%20-%20Divide%20and%20conquer%20algorithms.html)
+    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/09%20-%20Divide%20and%20conquer%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-09)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/25), [2](https://github.com/comp-think/2018-2019/issues/26)
     * Python: [immutable_values.py](https://comp-think.github.io/2018-2019/python/immutable_values.py), [mutable_values.py](https://comp-think.github.io/2018-2019/python/mutable_values.py), [immutable_and_mutable_variables.py](https://comp-think.github.io/2018-2019/python/immutable_and_mutable_variables.py), [merge.py](https://comp-think.github.io/2018-2019/python/merge.py), [merge_sort.py](https://comp-think.github.io/2018-2019/python/merge_sort.py)
 
