@@ -79,7 +79,7 @@ This space contains all the material related to the [Computational Thinking and 
 
 9. [27/11/18, *lab*] 2nd Lesson
     * content: [GitHub](https://github.com/marilenadaquino/computational_thinking/tree/master/ay-2018-2019/2_3_lesson)
-    * exercises: [Jupyter notebook](https://github.com/marilenadaquino/computational_thinking/blob/master/ay-2018-2019/2_3_lesson/Exercise_2.ipynb), [Python](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/2_3_lesson/2_3_exercise.py) 
+    * exercises: [Python](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/2_3_lesson/2_3_exercise.py) 
     * additional material:
         * CSV file: [titles.csv](https://github.com/marilenadaquino/computational_thinking/blob/master/ay-2018-2019/2_3_lesson/titles.csv)
     <hr />
@@ -121,6 +121,18 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/09%20-%20Divide%20and%20conquer%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-09)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/25), [2](https://github.com/comp-think/2018-2019/issues/26)
     * Python: [immutable_values.py](https://comp-think.github.io/2018-2019/python/immutable_values.py), [mutable_values.py](https://comp-think.github.io/2018-2019/python/mutable_values.py), [immutable_and_mutable_variables.py](https://comp-think.github.io/2018-2019/python/immutable_and_mutable_variables.py), [merge.py](https://comp-think.github.io/2018-2019/python/merge.py), [merge_sort.py](https://comp-think.github.io/2018-2019/python/merge_sort.py)
+    <hr />
+    
+15. [04/12/18, *lab*] 4th Lesson
+    * content: [GitHub](https://github.com/marilenadaquino/computational_thinking/tree/master/ay-2018-2019/4_lesson)
+    * exercises: [Python](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/4_lesson/exercise.py)
+    <hr />
+
+16. [05/12/18, *the*] Dynamic programming algorithms
+    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/10%20-%20Dynamic%20and%20programming%20algorithms.html)
+    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/10%20-%20Dynamic%20and%20programming%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-10)
+    * exercises: [1](https://github.com/comp-think/2018-2019/issues/27), [2](https://github.com/comp-think/2018-2019/issues/28)
+    * Python: [fib_dc.py](https://comp-think.github.io/2018-2019/python/fib_dc.py), [fib_dp.py](https://comp-think.github.io/2018-2019/python/fib_dp.py)
 
 ### Schedule
 

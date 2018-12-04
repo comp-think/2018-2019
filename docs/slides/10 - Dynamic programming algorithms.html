@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Dynamic programming algorithms</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/ctc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/addon.css"></link>
+		<link rel="stylesheet" href="css/font-awesome.min.css"></link>
+		<link rel="stylesheet" href="css/academicons.min.css"></link>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="title" class="title_slide" role="doc-cover">
+					<h1 class="bbbt">Dynamic programming algorithms</h1>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+						<p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Dates of the exam sessions</h2>
+					<p>The dates of the exam sessions are all confirmed, and are:</p>
+					<ul>
+						<li><p>25 January 2019</p></li>
+						<li><p>15 March 2019</p></li>
+						<li><p>22 May 2019</p></li>
+						<li><p>21 June 2019</p></li>
+						<li><p>17 July 2019</p></li>
+						<li><p>20 September 2019</p></li>
+					</ul>
+					<p>For each date:</p>
+					<ul>
+						<li><p>written examination: 10-12</p></li>
+						<li><p>project oral colloquium: 13-16</p></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Call for Aperitif</h2>
+                    <p>Goal: organise the (unofficial) aperitif the course</p>
+                    <ul>
+                        <li>Who: teachers + students</li>
+                        <li>What: chatting, drinking, having fun</li>
+                        <li>Where: TBA (once we know about the number of participants)</li>
+                        <li>When: 19<sup>th</sup> of December at 19:00</li>
+                        <li>Why: celebrating the end of the course and the coming holidays</li>
+                    </ul>
+                    <p>Please add your name in the link provided in the Telegram group if you would like to join</p>
+				</section>
+				
+				<section>
+					<h2>Any question about the previous lecture?</h2>
+				</section>
+				
+				<section>
+					<h2 class="bbt">Historic hero: Fibonacci</h2>
+					<img class="wm fr mlm" src="img/fibonacci.jpg" />
+					<p>He was a mathematician</p>
+					<p class="fragment">First person to introduce in Europe the Hindu-Arabic number system (i.e. 0, 1, 2, 3, 4, 5, 6, 7, 8, 9)</p>
+					<p class="fragment">Publication <em>Liber Abaci</em> (Book of Calculation) in 1202: how to use such numeral system for addressing situations related to commerce, and for solving generic mathematical problems</p>
+				</section>
+				
+				<section>
+					<h2>Fibonacci sequence</h2>
+					<p>Fibonacci developed an infinite sequence of numbers, named after him, that described ideally the number of male-female pairs of rabbits at a given month</p>
+					<p class="fragment" data-fragment-index="1"><code>fib(0) = 0</code><strong class="fragment" data-fragment-index="4"> [base case 1]</strong></p>
+					<p class="fragment" data-fragment-index="2"><code>fib(1) = 1</code><strong class="fragment" data-fragment-index="5"> [base case 2]</strong></p>
+					<p class="fragment" data-fragment-index="3"><code>fib(n) = fib(n-1) + fib(n-2)</code><strong class="fragment" data-fragment-index="6"> [recursive step]</strong></p>
+				</section>
+				
+				<section>
+					<section data-transition="slide-in fade-out">
+						<h2>Fibonacci: divide and conquer</h2>
+						<p class="tc"><img src="img/fib_dc-01.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Fibonacci: divide and conquer</h2>
+						<p class="tc"><img src="img/fib_dc-02.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Fibonacci: divide and conquer</h2>
+						<p class="tc"><img src="img/fib_dc-03.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Fibonacci: divide and conquer</h2>
+						<p class="tc"><img src="img/fib_dc-04.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Fibonacci: divide and conquer</h2>
+						<p class="tc"><img src="img/fib_dc-05.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Fibonacci: divide and conquer</h2>
+						<p class="tc"><img src="img/fib_dc-06.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Fibonacci: divide and conquer</h2>
+						<p class="tc"><img src="img/fib_dc-07.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Fibonacci: divide and conquer</h2>
+						<p class="tc"><img src="img/fib_dc-08.png" /></p>
+					</section>
+				</section>
+				
+				<section>
+					<h2>Fibonacci (divide and conquer): algorithm</h2>
+					<pre><code class="python">def fib_dc(n):
+    if n == 0 or n == 1:
+        return n
+    else:
+        return fib_dc(n-1) + fib_dc(n-2)</code></pre>
+				</section>
+				
+				<section>
+					<h2 class="bbt">Dynamic programming approach</h2>
+					<p>Dynamic programming algorithm is based on six steps</p>
+					<ol>
+						<li class="fragment" data-fragment-index="1"><p class="fragment highlight-red" data-fragment-index="7"><strong>[base case: solution exists]</strong> return the solution calculated previously, otherwise</p></li>
+						<li class="fragment" data-fragment-index="2"><p><strong>[base case: address directly]</strong> address directly if it is an easy-to-solve problem, otherwise</p></li>
+						<li class="fragment" data-fragment-index="3"><p><strong>[divide]</strong> split the input material into two or more balanced parts, each depicting a sub-problem of the original one</p></li>
+						<li class="fragment" data-fragment-index="4"><p><strong>[conquer]</strong> run the same algorithm recursively for every balanced parts obtained in the previous step</p></li>
+						<li class="fragment" data-fragment-index="5"><p><strong>[combine]</strong> reconstruct the final solution of the problem by means of the partial solutions</p></li>
+						<li class="fragment" data-fragment-index="6"><p class="fragment highlight-red" data-fragment-index="7"><strong>[memorize]</strong> store the solution to the problem for reusing it</p></li>
+					</ol>
+				</section>
+				
+				<section>
+					<section data-transition="slide-in fade-out">
+						<h2>Fibonacci: dynamic programming</h2>
+						<p class="tc"><img src="img/fib_dp-01.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Fibonacci: dynamic programming</h2>
+						<p class="tc"><img src="img/fib_dp-02.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Fibonacci: dynamic programming</h2>
+						<p class="tc"><img src="img/fib_dp-03.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Fibonacci: dynamic programming</h2>
+						<p class="tc"><img src="img/fib_dp-04.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Fibonacci: dynamic programming</h2>
+						<p class="tc"><img src="img/fib_dp-05.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Fibonacci: dynamic programming</h2>
+						<p class="tc"><img src="img/fib_dp-06.png" /></p>
+					</section>
+				</section>
+				
+				<section>
+					<h2>Fibonacci: ancillary operations</h2>
+					<p class="mbs">Non-inclusion in dictionary:<br /> <code>&lt;key> not in &lt;dictionary></code></p>
+					<p class="mtn">Comparison that returns <code>True</code> if &lt;key> is not included as key in any pair of &lt;dictionary></p>
+					<div class="fragment">
+						<p class="mbs">Parameter with default assignment<br /> <code>def &lt;algorithm>(&lt;param_d>=&lt;default>)</code></p>
+						<p class="mtn mbs">Initialises <code>&lt;param_d></code> with the default value specified if no value is passed for the execution of the algorithm</p>
+						<p class="mtn sst fragment">E.g., considering <code>def test(n=0)</code>, executing <code>test(4)</code> assigns the specified number to <code>n</code>, while executing <code>test()</code> assigns the default value <em>0</em> to <code>n</code></p>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Fibonacci (dynamic programming): algorithm</h2>
+					<pre><code class="python">def fib_dp(n, d=dict()):
+    if n not in d:
+        if n == 0 or n == 1:
+            d[n] = n
+        else:
+            d[n] = fib_dp(n-1, d) + fib_dp(n-2, d)
+
+    return d[n]</code></pre>
+				</section>
+				
+				<section class="title_slide">
+					<h2>
+						END
+						<span class="subtitle">Dynamic programming algorithms</span>
+					</h2>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
