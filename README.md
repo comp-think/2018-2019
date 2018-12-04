@@ -129,8 +129,8 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     <hr />
 
 16. [05/12/18, *the*] Dynamic programming algorithms
-    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/10%20-%20Dynamic%20and%20programming%20algorithms.html)
-    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/10%20-%20Dynamic%20and%20programming%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-10)
+    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/10%20-%20Dynamic%20programming%20algorithms.html)
+    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/10%20-%20Dynamic%20programming%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-10)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/27), [2](https://github.com/comp-think/2018-2019/issues/28)
     * Python: [fib_dc.py](https://comp-think.github.io/2018-2019/python/fib_dc.py), [fib_dp.py](https://comp-think.github.io/2018-2019/python/fib_dp.py)
 
