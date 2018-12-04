@@ -87,6 +87,13 @@ This space contains all the material related to the [Computational Thinking and 
 10. [28/11/18, *exa*] First partial examination
     * content: [test 1](https://comp-think.github.io/2018-2019/exams/first-partial-examination-01.pdf), [test 2](https://comp-think.github.io/2018-2019/exams/first-partial-examination-02.pdf)
     * solutions:
+        * exercise 1:
+            * solution to "Describe the main five widgets of the flowchart diagram model": Flowline = the arrow is used to define the order in which the operations are executed; Terminal = it indicates the beginning and ending of an algorithm; Process = used for expressing an instruction or
+operation; Decision = it depicts a conditional operation; Input / Output = allows the specification of an input or an output.
+            * solution to "List the three main characteristics that the data structure *list* has": order, repeatability of its elements, countability of its elements.
+        * exercise 2:
+            * solution to "Describe what is a low-level programming language": languages that provide **one abstraction level on top of the machine language**, and thus it allows one to write programs in a way that is more intelligible to humans.
+            * solution to "Describe what is a high-level programming language": languages which are characterised by a **strong abstraction from the specifiability of the machine language**. In particular, it **may use** natural language words for specific construct, so as to be easy to use for and to understand by humans.
         * exercise 3: [Python script](https://comp-think.github.io/2018-2019/python/turing_machine_1st_partial_ex3.py) to calculate the output of the Turing machine provided - run with `python turing_machine_1st_partial_ex3.py` and follow the instructions
         * exercise 4: [Python script](https://comp-think.github.io/2018-2019/python/f_1st_partial_ex4.py) to calculate the output of the function `f` - run with `python f_1st_partial_ex4.py` and follow the instructions
         * exercise 5: [implementation](https://comp-think.github.io/2018-2019/python/do_it_1st_partial_ex5.py) of the function `do_it`
