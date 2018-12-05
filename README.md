@@ -74,6 +74,7 @@ This space contains all the material related to the [Computational Thinking and 
    * Python: [stack_from_list.py](https://comp-think.github.io/2018-2019/python/stack_from_list.py), [run_forever.py](https://comp-think.github.io/2018-2019/python/run_forever.py), [linear_search.py](https://comp-think.github.io/2018-2019/python/linear_search.py), [insertion_sort.py](https://comp-think.github.io/2018-2019/python/insertion_sort.py)
    * additional material:
        * video ["15 Sorting Algorithms in 6 Minutes"](https://www.youtube.com/watch?v=kPRA0W1kECg)
+       * website ["Visualgo.net: sorting algorithms"](https://visualgo.net/en/sorting) 
        * solutions to Python exercises: [2](https://comp-think.github.io/2018-2019/python/stack_from_list_ex2.py), [3](https://comp-think.github.io/2018-2019/python/my_enumerate_ex3.py), [4](https://comp-think.github.io/2018-2019/python/my_range_ex3.py), [5](https://comp-think.github.io/2018-2019/python/my_reversed_ex5.py)
    <hr />
 
@@ -121,6 +122,8 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/09%20-%20Divide%20and%20conquer%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-09)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/25), [2](https://github.com/comp-think/2018-2019/issues/26)
     * Python: [immutable_values.py](https://comp-think.github.io/2018-2019/python/immutable_values.py), [mutable_values.py](https://comp-think.github.io/2018-2019/python/mutable_values.py), [immutable_and_mutable_variables.py](https://comp-think.github.io/2018-2019/python/immutable_and_mutable_variables.py), [merge.py](https://comp-think.github.io/2018-2019/python/merge.py), [merge_sort.py](https://comp-think.github.io/2018-2019/python/merge_sort.py)
+    * additional material:
+        * video ["Quicksort: Partitioning an array"](https://www.youtube.com/watch?v=MZaf_9IZCrc)
     <hr />
     
 15. [04/12/18, *lab*] 4th Lesson
