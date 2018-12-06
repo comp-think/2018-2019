@@ -115,6 +115,8 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/08%20-%20Recursion.pdf), [Google Docs](https://tinyurl.com/comp-think-08)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/23), [2](https://github.com/comp-think/2018-2019/issues/24)
     * Python: [run_forever_recursive.py](https://comp-think.github.io/2018-2019/python/run_forever_recursive.py), [multiplication.py](https://comp-think.github.io/2018-2019/python/multiplication.py)
+    * additional material:
+        * solution to Python exercises: [1](https://comp-think.github.io/2018-2019/python/exponentation.py), [2](https://comp-think.github.io/2018-2019/python/fib.py) 
     <hr />
 
 14. [03/12/18, *the*] Divide and conquer algorithms
@@ -136,6 +138,15 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/10%20-%20Dynamic%20programming%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-10)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/27), [2](https://github.com/comp-think/2018-2019/issues/28)
     * Python: [fib_dc.py](https://comp-think.github.io/2018-2019/python/fib_dc.py), [fib_dp.py](https://comp-think.github.io/2018-2019/python/fib_dp.py)
+    <hr />
+    
+17. [06/12/18, *lab*] 5th Lesson
+    * content: [GitHub](https://github.com/marilenadaquino/computational_thinking/tree/master/ay-2018-2019/5_lesson)
+    * exercises: [Python](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_lesson/exercise.py)
+    * additional material:
+        * TXT file: [military.txt](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_lesson/military.txt)
+        * script for installing the needed [NLTK packages](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_lesson/install_nltk.py)
+        * [example of use](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_lesson/example.py) of NLTK
 
 ### Schedule
 
