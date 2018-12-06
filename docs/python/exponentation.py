@@ -31,6 +31,6 @@ def exponentation(int_1, int_2):
         return int_1 * exponentation(int_1, int_2 - 1)
 
 
-print(test_exponentation(13, 0, 1))
-print(test_exponentation(2, 2, 4))
-print(test_exponentation(5, 7, 78125))
+print(test_exponentation(3, 4, 81))
+print(test_exponentation(17, 1, 17))
+print(test_exponentation(2, 0, 1))
