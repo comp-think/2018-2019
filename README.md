@@ -45,6 +45,7 @@ This space contains all the material related to the [Computational Thinking and 
         * article ["Statistical mechanics of cellular automata"](https://journals.aps.org/rmp/pdf/10.1103/RevModPhys.55.601) by Wolfram (DOI: [10.1103/RevModPhys.55.601](https://doi.org/10.1103/RevModPhys.55.601))
         * section on ["Turing machines"](https://www.wolframscience.com/nks/p184--turing-machines/) of the book "A new kind of science" by Wolfram
         * article ["Alan Turing’s Legacy: Info-Computational Philosophy of Nature"](https://arxiv.org/ftp/arxiv/papers/1207/1207.1033.pdf) by Dodig-Crnkovic (DOI: [10.1007/978-3-642-37225-4_6](https://doi.org/10.1007/978-3-642-37225-4_6))
+        * article ["The new statistics: why and how](https://journals.sagepub.com/doi/pdf/10.1177/0956797613504966) by Cumming (DOI: [10.1177/0956797613504966](https://doi.org/10.1177/0956797613504966))
     <hr />
 
 5. [19/11/18, *the*] Programming languages
@@ -126,6 +127,7 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * Python: [immutable_values.py](https://comp-think.github.io/2018-2019/python/immutable_values.py), [mutable_values.py](https://comp-think.github.io/2018-2019/python/mutable_values.py), [immutable_and_mutable_variables.py](https://comp-think.github.io/2018-2019/python/immutable_and_mutable_variables.py), [merge.py](https://comp-think.github.io/2018-2019/python/merge.py), [merge_sort.py](https://comp-think.github.io/2018-2019/python/merge_sort.py)
     * additional material:
         * video ["Quicksort: Partitioning an array"](https://www.youtube.com/watch?v=MZaf_9IZCrc)
+        * solution to Python exercises: [1](https://comp-think.github.io/2018-2019/python/partition.py), [2](https://comp-think.github.io/2018-2019/python/quicksort.py)
     <hr />
     
 15. [04/12/18, *lab*] 4th Lesson
