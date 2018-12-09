@@ -149,6 +149,14 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
         * TXT file: [military.txt](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_lesson/military.txt)
         * script for installing the needed [NLTK packages](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_lesson/install_nltk.py)
         * [example of use](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_lesson/example.py) of NLTK
+    <hr />
+
+17. [10/12/18, *the*] Organising infomration: trees
+    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/11%20-%20Organising%20information%20-%20trees.html)
+    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/11%20-%20Organising%20information%20-%20trees.pdf), [Google Docs](https://tinyurl.com/comp-think-11)
+    * exercises: [1](https://github.com/comp-think/2018-2019/issues/29), [2](https://github.com/comp-think/2018-2019/issues/30)
+    * Python: [tree_instructions.py](https://comp-think.github.io/2018-2019/python/tree_instructions.py)
+    <hr />
 
 ### Schedule
 

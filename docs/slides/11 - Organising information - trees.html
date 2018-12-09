@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Organising information: trees</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/ctc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/addon.css"></link>
+		<link rel="stylesheet" href="css/font-awesome.min.css"></link>
+		<link rel="stylesheet" href="css/academicons.min.css"></link>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="title" class="title_slide" role="doc-cover">
+					<h1 class="bbbbt">Organising information: trees</h1>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+						<p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></p>
+					</div>
+				</section>
+
+                <section>
+                    <h2>Communication 1</h2>
+                    <p>Next Wednesday (12 November) there will be the evaluation of the course</p>
+                    <p>Please do not miss it!</p>
+                </section>
+
+				<section>
+					<h2>Communication 2</h2>
+                    <p>Goal: organise the (unofficial) aperitif the course</p>
+                    <ul>
+                        <li>Who: teachers + students</li>
+                        <li>What: chatting, drinking, having fun</li>
+                        <li>Where: TBA (once we know about the number of participants)</li>
+                        <li>When: 19<sup>th</sup> of December at 19:00</li>
+                        <li>Why: celebrating the end of the course and the coming holidays</li>
+                    </ul>
+                    <p>Please add your name in the link provided in the Telegram group if you would like to join</p>
+				</section>
+				
+				<section>
+					<h2>Any question about the previous lecture?</h2>
+				</section>
+				
+				<section>
+					<h2 class="bbt">Historic hero: Gabriel Garcia Marquez</h2>
+					<img class="wm fr mlm" src="img/marquez.jpg" />
+					<p>He was a novelist, and won the Nobel Prize for Literature in 1982</p>
+					<p class="fragment">He is mainly known for his novels: <em>One Hundred Years of Solitude</em>, <em>Love in the Time of Cholera</em></p>
+					<p class="fragment">In the <em>One Hundred Years of Solitude</em> he narrates the story of seven different generations of people of the Buendia family</p>
+					<p class="fragment">At the beginning of the book there is the Buendia family <em>tree</em>, for helping the reader to follow the story</p>
+				</section>
+				
+				<section>
+					<h2>Trees in recursive calls</h2>
+					<p>Recursive algorithm: we have used a tree for showing the execution of the recursive calls to the Fibonacci algorithm implemented by means of the divide and conquer approach</p>
+                    <p class="tc"><img src="img/fib-tree.png" /></p>
+				</section>
+
+                <section>
+					<h2>Other uses of trees</h2>
+					<p>Dealing with markup languages so as to associate specific roles to the various parts of a text</p>
+                    <p>Example from <cite>Alice's Adventure in Wonderland</cite> by Carroll:</p>
+                    <blockquote class="sst">
+                        <p>Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice, “without pictures or conversations?”</p>
+                        <p>So she was considering in her own mind, (as well as she could, for the hot day made her feel very sleepy and stupid,) whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a white rabbit with pink eyes ran close by her.</p>
+                    </blockquote>
+				</section>
+
+                <section>
+					<section data-transition="slide-in fade-out">
+						<h2>Markup: example</h2>
+						<p class="tc"><img class="hl" src="img/alice-01.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Markup: example</h2>
+						<p class="tc"><img class="hl" src="img/alice-02.png" /></p>
+					</section>
+                    <section data-transition="fade-in">
+						<h2>Markup: example</h2>
+						<p class="tc"><img class="hl" src="img/alice-03.png" /></p>
+					</section>
+                    <section data-transition="fade-in">
+						<h2>Markup: example</h2>
+						<p class="tc"><img class="hl" src="img/alice-04.png" /></p>
+					</section>
+                    <section data-transition="fade-in">
+						<h2>Markup: example</h2>
+						<p class="tc"><img class="hl" src="img/alice-05.png" /></p>
+					</section>
+                </section>
+
+                <section>
+                    <h2>From boxes to trees</h2>
+                    <p>This approach of enclosing part of a text within a labelled box is called markup</p>
+                    <p>Several markup languages have been defined in the past so as to enable such kinds of annotations on a text</p>
+                    <p>Even if it is not extremely clear at a first sight, such organisation of boxes describes a precise hierarchy between them, that we can actually <span class="fragment highlight-red">abstract</span> as a tree</p>
+                    <p>The bigger box (i.e. <code>book</code>) contains smaller ones (i.e. <code>chapter</code>s), that contain the even smaller ones (i.e. <code>paragraph</code>s), and so on</p>
+                </section>
+
+                <section>
+					<section data-transition="slide-in fade-out">
+						<h2>Markup: tree example</h2>
+						<p class="tc"><img class="hl" src="img/alice-tree-01.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Markup: tree example</h2>
+						<p class="tc"><img class="hl" src="img/alice-tree-02.png" /></p>
+					</section>
+                    <section data-transition="fade-in">
+						<h2>Markup: tree example</h2>
+						<p class="tc"><img class="hl" src="img/alice-tree-03.png" /></p>
+					</section>
+                    <section data-transition="fade-in">
+						<h2>Markup: tree example</h2>
+						<p class="tc"><img class="hl" src="img/alice-tree-04.png" /></p>
+					</section>
+                    <section data-transition="fade-in">
+						<h2>Markup: tree example</h2>
+						<p class="tc"><img class="hl" src="img/alice-tree-05.png" /></p>
+					</section>
+                    <section data-transition="fade-in">
+						<h2>Markup: tree example</h2>
+						<p class="tc"><img class="hl" src="img/alice-tree-06.png" /></p>
+					</section>
+                    <section data-transition="fade-in">
+						<h2>Markup: tree example</h2>
+						<p class="tc"><img class="hl" src="img/alice-tree-07.png" /></p>
+					</section>
+                    <section data-transition="fade-in">
+						<h2>Markup: tree example</h2>
+						<p class="tc"><img class="hl" src="img/alice-tree-08.png" /></p>
+					</section>
+                    <section data-transition="fade-in">
+						<h2>Markup: tree example</h2>
+						<p class="tc"><img class="hl" src="img/alice-tree-09.png" /></p>
+					</section>
+                    <section data-transition="fade-in">
+						<h2>Markup: tree example</h2>
+						<p class="tc"><img class="hl" src="img/alice-tree-10.png" /></p>
+					</section>
+                </section>
+
+                <section>
+                    <h2>Markup: HTML</h2>
+                    <pre><code class="sst html">&lt;html>
+    &lt;head>&lt;title>Alice's Adventures in Wonderland&lt;/title>&lt;/head>
+    &lt;body>
+        &lt;section role="doc-chapter">
+            &lt;p>Alice was beginning to get very tired of sitting by her sister on the bank, and of
+               having nothing to do: once or twice she had peeped into the book her sister was
+               reading, but it had no pictures or conversations in it, &lt;q>and what is the use
+               of a book,&lt;/q> thought Alice, &lt;q>without pictures or conversations?&lt;/q>&lt;/p>
+            &lt;p>So she was considering in her own mind, (as well as she could, for the hot day made
+               her feel very sleepy and stupid,) whether the pleasure of making a daisy-chain would
+               be worth the trouble of getting up and picking the daisies, when suddenly a white
+               rabbit with pink eyes ran close by her.&lt;/p>
+            &lt;p>...&lt;/p>
+        &lt;/section>
+        &lt;section role="doc-chapter">...&lt;/section> ...
+    &lt;/body>
+&lt;/html></code></pre>
+                </section>
+				
+				<section>				
+					<section data-transition="slide-in fade-out">
+						<h2>Tree: definition</h2>
+						<p>A tree is a data structure that simulates a hierarchical tree, composed by a set of <span class="fragment highlight-red">nodes</span> related to each other by a particular hierarchical <span class="fragment highlight-red">parent-child relation</span></p>
+						<p class="tc fragment"><img src="img/tree-01.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Tree: definition</h2>
+						<p>A tree is a data structure that simulates a hierarchical tree, composed by a set of <span class="cr">nodes</span> related to each other by a particular hierarchical <span class="cr">parent-child relation</span></p>
+						<p class="tc"><img src="img/tree-02.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Tree: definition</h2>
+						<p>A tree is a data structure that simulates a hierarchical tree, composed by a set of <span class="cr">nodes</span> related to each other by a particular hierarchical <span class="cr">parent-child relation</span></p>
+						<p class="tc"><img src="img/tree-03.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Tree: definition</h2>
+						<p>A tree is a data structure that simulates a hierarchical tree, composed by a set of <span class="cr">nodes</span> related to each other by a particular hierarchical <span class="cr">parent-child relation</span></p>
+						<p class="tc"><img src="img/tree-04.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Tree: definition</h2>
+						<p>A tree is a data structure that simulates a hierarchical tree, composed by a set of <span class="cr">nodes</span> related to each other by a particular hierarchical <span class="cr">parent-child relation</span></p>
+						<p class="tc"><img src="img/tree-05.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Tree: definition</h2>
+						<p>A tree is a data structure that simulates a hierarchical tree, composed by a set of <span class="cr">nodes</span> related to each other by a particular hierarchical <span class="cr">parent-child relation</span></p>
+						<p class="tc"><img src="img/tree-06.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Tree: definition</h2>
+						<p>A tree is a data structure that simulates a hierarchical tree, composed by a set of <span class="cr">nodes</span> related to each other by a particular hierarchical <span class="cr">parent-child relation</span></p>
+						<p class="tc"><img src="img/tree-07.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Tree: definition</h2>
+						<p>A tree is a data structure that simulates a hierarchical tree, composed by a set of <span class="cr">nodes</span> related to each other by a particular hierarchical <span class="cr">parent-child relation</span></p>
+						<p class="tc"><img src="img/tree-08.png" /></p>
+					</section>
+				</section>
+				
+				<section>
+					<h2>Tree and Python</h2>
+					<p>There is no built-in implementation of the tree data structure in Python</p>
+					<p>We use the external <em>anytree</em> package</p>
+					<p class="fragment">Constructor for nodes:<br/><code>def Node(name, parent=None)</code></p>
+					<p class="fragment">Each node must specify a name (any object, e.g. a string) and a parent – if the parent is not specified then it will assume <code>None</code> as value and it is implicitly defined as the root node of a tree</p>
+				</section>
+				
+				<section>
+					<h2>Example</h2>
+					<pre><code class="python">book = Node("book")
+chapter_1 = Node("chapter", book)
+chapter_2 = Node("chapter", book)
+
+paragraph_1 = Node("paragraph", chapter_1)
+text_1 = Node("Alice was beginning to get very tired of sitting by "
+              "her sister on the bank, and of having nothing to do: "
+              "once or twice she had peeped into the book her sister "
+              "was reading, but it had no pictures or conversations "
+              "in it, ", paragraph_1)
+quotation_1 = Node("quotation", paragraph_1)
+text_2 = Node("“and what is the use of a book,”", quotation_1)
+text_3 = Node(" thought Alice, ", paragraph_1)
+quotation_2 = Node("quotation", paragraph_1)
+text_4 = Node("“without pictures or conversations?”", quotation_2)
+
+paragraph_2 = Node("paragraph", chapter_1) ...</code></pre>
+					<p class="fragment">The siblings of a certain parent are actually ordered among them – the order is defined by the order of insertion as a child of that particular parent</p>
+				</section>
+				
+				<section>
+					<h2>Hooks</h2>
+					<ul>
+						<li><p><code>&lt;node>.name</code> returns the object used as name</p></li>
+						<li class="fragment"><p><code>&lt;node>.children</code> returns a tuple with the child nodes</p></li>
+						<li class="fragment"><p><code>&lt;node>.parent</code> returns the parent node</p></li>
+						<li class="fragment"><p><code>&lt;node>.descendants</code> returns a tuple with the descendants of a node</p></li>
+						<li class="fragment"><p><code>&lt;node>.ancestors</code> returns a tuple with the ancestors of a node</p></li>
+						<li class="fragment"><p><code>&lt;node>.siblings</code> returns a tuple with the siblings of a node</p></li>
+						<li class="fragment"><p><code>&lt;node>.root</code> returns the root node of the tree where a node is contained</p></li>
+					</ul>
+				</section>
+
+                <section>
+                    <h2>Rendering trees</h2>
+                    <p>It is possible also to visualise the tree graphically, by instantiating the class <code>RenderTree</code> by specifying a node as input, and then print it on screen using <code>print</code></p>
+                    <pre><code class="python">from anytree import RenderTree
+
+renderer = RenderTree(book)
+print(book)
+
+# Node('/book')
+# ├── Node('/book/chapter')
+# │   ├── Node('/book/chapter/paragraph')
+# │   │   ├── Node('/book/chapter/paragraph/Alice was…')
+# │   │   ├── Node('/book/chapter/paragraph/quotation')
+# │   │   │   └── Node('/book/chapter/paragraph/quotation/“and…')
+# │   │   ├── Node('/book/chapter/paragraph/ thought Alice, ')
+# │   │   └── Node('/book/chapter/paragraph/quotation')
+# │   │       └── Node('/book/chapter/paragraph/quotation/“without…')
+# │   ├── Node('/book/chapter/paragraph') …
+</code></pre>
+                </section>
+				
+				<section class="title_slide">
+					<h2>
+						END
+						<span class="subtitle">Organising information: trees</span>
+					</h2>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
