@@ -151,11 +151,21 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
         * [example of use](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_lesson/example.py) of NLTK
     <hr />
 
-17. [10/12/18, *the*] Organising infomration: trees
+18. [10/12/18, *the*] Organising information: trees
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/11%20-%20Organising%20information%20-%20trees.html)
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/11%20-%20Organising%20information%20-%20trees.pdf), [Google Docs](https://tinyurl.com/comp-think-11)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/29), [2](https://github.com/comp-think/2018-2019/issues/30)
     * Python: [tree_instructions.py](https://comp-think.github.io/2018-2019/python/tree_instructions.py)
+    <hr />
+    
+19. [11/12/18, *lab*] 6th Lesson (included in the material of the 5th lesson above)
+    <hr />
+
+20. [12/12/18, *the*] Organising information: graph
+    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/12%20-%20Organising%20information%20-%20graphs.html)
+    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/12%20-%20Organising%20information%20-%20graphs.pdf), [Google Docs](https://tinyurl.com/ydblbthl)
+    * exercises: [1](https://github.com/comp-think/2018-2019/issues/31), [2](https://github.com/comp-think/2018-2019/issues/32)
+    * Python: [graph_instructions.py](https://comp-think.github.io/2018-2019/python/graph_instructions.py), [graph__attribute_instructions.py](https://comp-think.github.io/2018-2019/python/graph__attribute_instructions.py), [multigraph_instructions.py](https://comp-think.github.io/2018-2019/python/multigraph_instructions.py)
     <hr />
 
 ### Schedule
