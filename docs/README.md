@@ -160,7 +160,7 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/29), [2](https://github.com/comp-think/2018-2019/issues/30)
     * Python: [tree_instructions.py](https://comp-think.github.io/2018-2019/python/tree_instructions.py)
     * additional material:
-        * solution to Python exercises: [1](https://comp-think.github.io/2018-2019/python/breath_first_visit_recursive.py), [2](https://comp-think.github.io/2018-2019/python/breath_first_visit_iterative.py)
+        * solution to Python exercises: [1](https://comp-think.github.io/2018-2019/python/breadth_first_visit_recursive.py), [2](https://comp-think.github.io/2018-2019/python/breadth_first_visit_iterative.py)
     <hr />
     
 19. [11/12/18, *lab*] 6th Lesson (included in the material of the 5th lesson above)
