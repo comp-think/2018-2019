@@ -182,8 +182,8 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     <hr />
 
 22. [14/12/18, *the*] Backtracking algorithms
-    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/13%20-%20Backgtracking%20algorithms.html)
-    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/13%20-%20Backgtracking%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-13)
+    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/13%20-%20Backtracking%20algorithms.html)
+    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/13%20-%20Backtracking%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-13)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/34)
     * Python: [peg_solitaire.py](https://comp-think.github.io/2018-2019/python/peg_solitaire.py)
     <hr />
