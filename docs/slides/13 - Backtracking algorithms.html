@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Backtracking algorithms</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/ctc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/addon.css"></link>
+		<link rel="stylesheet" href="css/font-awesome.min.css"></link>
+		<link rel="stylesheet" href="css/academicons.min.css"></link>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="title" class="title_slide" role="doc-cover">
+					<h1>Backtracking algorithms</h1>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+						<p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></p>
+					</div>
+				</section>
+
+                <section>
+                    <h2>Communication 1</h2>
+                    <p>Monday 17 of December 2018: project presentation</p>
+                    <p>Please do not miss it!</p>
+                    <p class="fragment highlight-red">Lecture time: 11:30-13:30, we will start at 11:30 sharp</p>
+                </section>
+
+                <section>
+                    <h2>Communication 2</h2>
+                    <p>It is important to form and finalise <strong>all</strong> the groups of the project during this week</p>
+                    <p>Once you have decided its composition, please communicate to me (by email) the name of the group (yes, each group must have a name) and its members</p>
+                    <p>I have received just one group communication so far... Where are my drago... Ehm, where are the others?</p>
+                </section>
+				
+				<section>
+					<h2>Any question about the previous lecture?</h2>
+				</section>
+				
+				<section>
+					<h2 class="bbt">Historic hero: AlphaGo</h2>
+					<img class="wm fr mlm" src="img/go.jpg" />
+					<p>It is an artificial intelligence developed by Google DeepMind for playing to Go</p>
+					<p class="fragment">Before 2015: several software have been developed to play to Go automatically, but all of them showed their limits when tested with human expert players of the game - in fact, no Go software was able to beat a human master</p>
+					<p class="fragment">In 2015: Google declared to have developed the best artificial intelligence for playing to Go, and asked to test it in international matches against the strongest Go players</p>
+				</section>
+				
+				<section>
+					<h2>AlphaGo vs. Fan Hui</h2>
+					<img class="wm fr mlm" src="img/fanhui.jpg" />
+					<p>Match in October 2015, best of five games</p>
+					<p class="fragment">Fan Hui was the champion of the European Go Championship in 2013, 2014 and 2015 (professional 2 dan player)</p>
+					<p class="fragment">Result: 5 - 0</p>
+				</section>
+				
+				<section>
+					<h2>AlphaGo vs. Lee Sedol</h2>
+					<img class="wm fr mlm" src="img/leesedol.jpg" />
+					<p>Match in March 2016, best of five games</p>
+					<p class="fragment">In 2016, Lee Sedol was ranked second in international titles (professional 9 dan player, max rank)</p>
+					<p class="fragment">Result: 4 - 1</p>
+				</section>
+				
+				<section>
+					<h2>AlphaGo vs. Ke Jie</h2>
+					<img class="wm fr mlm" src="img/kejie.png" />
+					<p>Match in May 2017, best of three games</p>
+					<p class="fragment">In 2017, Ke Jie was ranked number one in the world (professional 9 dan player, max rank)</p>
+					<p class="fragment">Result: 3 - 0</p>
+				</section>
+				
+				<section>
+					<h2>AlphaGo Zero vs. AlphaGo</h2>
+					<img class="wm fr mlm" src="img/alphago.png" />
+					<p>Match in October 2017, best of one hundred games</p>
+					<p class="fragment">AlphaGo Zero has been trained without using any existing human knowledge – i.e. the matches between human champions that have been archived in the past, that have been actually used for training AlphaGo</p>
+					<p class="fragment">Result: 100 - 0</p>
+				</section>
+				
+				<section>
+					<h2>Backtracking</h2>
+					<p>Algorithms for finding a solution to abstract strategy board games are based on a tree (node = possible move)</p>
+					<p class="fragment">Backtracking algorithms find a solution by <span class="fragment highlight-red">identifying possible candidates incrementally</span>, and <span class="fragment highlight-red">abandons partial candidates</span> if they won't provide a solution</p>
+					<ol class="st">
+						<li class="fragment"><p><strong>[leaf-win]</strong> if current node is a leaf and it is a solution then return it, otherwise</p></li>
+						<li class="fragment"><p><strong>[leaf-lose]</strong> if current node is a leaf but it is not a solution, then return no solution back the parent node, otherwise</p></li>
+						<li class="fragment"><p><strong>[recursive-step]</strong> apply recursively the whole approach for each child of the current node, until one of these recursive executions returns a solution - if no solution, back the parent node of the current one</p></li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Peg solitaire</h2>
+					<p>It is a board game for one person only which involves the movement of some pegs on board containing holes</p>
+					<p class="tc"><img class="wl" src="img/peg.png" /></p>
+					<p class="fragment">Starting situation: the entire board is filled up with pegs except the central position which is empty</p>
+					<p class="fragment">Goal: whole board is full of holes except the central position which must contain a peg</p>
+				</section>
+				
+				<section>
+					<h2>Moves</h2>
+					<p>Valid move: moving orthogonally a peg over an adjacent peg into a hole two position away, removing the jumped peg from the board</p>
+					<p class="tc"><img class="wl" src="img/move.png" /></p>
+					<p class="fragment">Computational problem: find a sequence of moves that allows one to solve the peg solitaire</p>
+				</section>
+				
+				<section>
+					<h2>Descriptive solution</h2>
+					<ol>
+						<li><p><strong>[leaf-win]</strong> if last move brought to only one peg in the board in central position, then a solution has been found and return it, otherwise</li>
+						<li class="fragment"><p><strong>[leaf-lose]</strong> if last move brought to a situation where no additional moves are possible, then recreate previous status of the board and return no solutions, otherwise</p></li>
+						<li class="fragment"><p><strong>[recursive-step]</strong> apply recursively the algorithm for each possible valid move executable according to the current status of the board, until one of these recursive executions of the algorithm returns a solution – if none of them provide a solution, recreate the previous status of the board and return no solutions</p></li>
+					</ol>
+				</section>
+				
+				<section>
+					<section data-transition="slide-in fade-out">
+						<h2>Algorithm: execution</h2>
+						<p class="tc"><img class="hl" src="img/move-tree-01.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Algorithm: execution</h2>
+						<p class="tc"><img class="hl" src="img/move-tree-02.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Algorithm: execution</h2>
+						<p class="tc"><img class="hl" src="img/move-tree-03.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Algorithm: execution</h2>
+						<p class="tc"><img class="hl" src="img/move-tree-04.png" /></p>
+					</section>
+					<section data-transition="fade-in">
+						<h2>Algorithm: execution</h2>
+						<p class="tc"><img class="hl" src="img/move-tree-05.png" /></p>
+					</section>
+				</section>
+
+				<section>
+                    <h2>6x6 square board</h2>
+                    <p>This board is the smallest square board on which the complement problem</p>
+                    <p>Complement problem: obtaining the complement of a given an initial configuration of a board by replacing every peg by a hole and vice versa</p>
+                    <p class="tc"><img class="wl" src="img/6x6-square-board.png" /></p>
+                </section>
+
+				<section>
+					<h2>How to represent the board</h2>
+					<pre class="tc">(0,0) (1,0) (2,0) (3,0) (4,0) (5,0)
+(0,1) (1,1) (2,1) (3,1) (4,1) (5,1)
+(0,2) (1,2) (2,2) (3,2) (4,2) (5,2)
+(0,3) (1,3) (2,3) (3,3) (4,3) (5,3)
+(0,4) (1,4) (2,4) (3,4) (4,4) (5,4)
+(0,5) (1,5) (2,5) (3,5) (4,5) (5,5)​</pre>
+					<p class="fragment">Two sets of tuples:</p>
+					<ul>
+						<li class="fragment"><p><code>pegs</code>: the list of the positions occupied by pegs - starting situation: all position but <code>(3,2)</code></p></li>
+						<li class="fragment"><p><code>holes</code>: the list of the positions with no pegs - starting situation: only <code>(3,2)</code></p></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Ancillary functions</h2>
+					<p><code>def valid_moves(pegs, holes)</code>: it returns a list of tree nodes, where each node represent a possible move that one can execute according to the current status of the board (defined by the two input sets <code>pegs</code> and <code>holes</code>)</p>
+					<p class="fragment"><code>def apply_move(node, pegs, holes)</code>: execute the move defined by the input node, and change the status of the board accordingly</p>
+					<p class="fragment"><code>def undo_move(node, pegs, holes)</code>: undo the move defined by the input node, and change the status of the board accordingly</p>
+				</section>
+				
+				<section>
+					<h2>The algorithm</h2>
+					<pre><code class="python">def solve(pegs, holes, last_move=Node("start")):
+    result = None
+    if len(pegs) == 1 and (3, 2) in pegs:  # leaf-win base case
+        result = last_move
+    else:
+        last_move.children = valid_moves(pegs, holes)
+        if len(last_move.children) == 0:  # leaf-lose base case
+            undo_move(last_move, pegs, holes)  # backtracking
+        else:  # recursive step
+            possible_moves = deque(last_move.children)
+            while result is None and len(possible_moves) > 0:
+                current_move = possible_moves.pop()
+                apply_move(current_move, pegs, holes)
+                result = solve(pegs, holes, current_move)
+            if result is None:
+                undo_move(last_move, pegs, holes)  # backtracking
+    return result</code></pre>
+    				<p class="fragment">First execution:<br/><code>solve(initial_pegs, initial_holes)</code></p>
+				</section>
+				
+				<section class="title_slide">
+					<h2>
+						END
+						<span class="subtitle">Backtracking algorithms</span>
+					</h2>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

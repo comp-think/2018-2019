@@ -126,6 +126,7 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/25), [2](https://github.com/comp-think/2018-2019/issues/26)
     * Python: [immutable_values.py](https://comp-think.github.io/2018-2019/python/immutable_values.py), [mutable_values.py](https://comp-think.github.io/2018-2019/python/mutable_values.py), [immutable_and_mutable_variables.py](https://comp-think.github.io/2018-2019/python/immutable_and_mutable_variables.py), [merge.py](https://comp-think.github.io/2018-2019/python/merge.py), [merge_sort.py](https://comp-think.github.io/2018-2019/python/merge_sort.py)
     * additional material:
+        * video ["Merge-sort with Transylvanian-saxon (German) folk dance"](https://www.youtube.com/watch?v=XaqR3G_NVoo)
         * video ["Quicksort: Partitioning an array"](https://www.youtube.com/watch?v=MZaf_9IZCrc)
         * solution to Python exercises: [1](https://comp-think.github.io/2018-2019/python/partition.py), [2](https://comp-think.github.io/2018-2019/python/quicksort.py)
     <hr />
@@ -140,15 +141,17 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/10%20-%20Dynamic%20programming%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-10)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/27), [2](https://github.com/comp-think/2018-2019/issues/28)
     * Python: [fib_dc.py](https://comp-think.github.io/2018-2019/python/fib_dc.py), [fib_dp.py](https://comp-think.github.io/2018-2019/python/fib_dp.py)
+    * additional material:
+        * solution to Python exercises: [1](https://comp-think.github.io/2018-2019/python/multiplication_dp.py), [2](https://comp-think.github.io/2018-2019/python/merge_sort_dp.py)
     <hr />
     
 17. [06/12/18, *lab*] 5th Lesson
-    * content: [GitHub](https://github.com/marilenadaquino/computational_thinking/tree/master/ay-2018-2019/5_lesson)
-    * exercises: [Python](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_lesson/exercise.py)
+    * content: [GitHub](https://github.com/marilenadaquino/computational_thinking/tree/master/ay-2018-2019/5_6_lesson)
+    * exercises: [Python](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_6_lesson/exercise.py)
     * additional material:
-        * TXT file: [military.txt](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_lesson/military.txt)
-        * script for installing the needed [NLTK packages](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_lesson/install_nltk.py)
-        * [example of use](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_lesson/example.py) of NLTK
+        * TXT file: [military.txt](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_6_lesson/military.txt)
+        * script for installing the needed [NLTK packages](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_6_lesson/install_nltk.py)
+        * [example of use](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/5_6_lesson/example.py) of NLTK
     <hr />
 
 18. [10/12/18, *the*] Organising information: trees
@@ -156,6 +159,8 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/11%20-%20Organising%20information%20-%20trees.pdf), [Google Docs](https://tinyurl.com/comp-think-11)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/29), [2](https://github.com/comp-think/2018-2019/issues/30)
     * Python: [tree_instructions.py](https://comp-think.github.io/2018-2019/python/tree_instructions.py)
+    * additional material:
+        * solution to Python exercises: [1](https://comp-think.github.io/2018-2019/python/breath_first_visit_recursive.py), [2](https://comp-think.github.io/2018-2019/python/breath_first_visit_iterative.py)
     <hr />
     
 19. [11/12/18, *lab*] 6th Lesson (included in the material of the 5th lesson above)
@@ -163,9 +168,24 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
 
 20. [12/12/18, *the*] Organising information: graph
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/12%20-%20Organising%20information%20-%20graphs.html)
-    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/12%20-%20Organising%20information%20-%20graphs.pdf), [Google Docs](https://tinyurl.com/ydblbthl)
+    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/12%20-%20Organising%20information%20-%20graphs.pdf), [Google Docs](https://tinyurl.com/yce9yd82)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/31), [2](https://github.com/comp-think/2018-2019/issues/32)
     * Python: [graph_instructions.py](https://comp-think.github.io/2018-2019/python/graph_instructions.py), [graph_attribute_instructions.py](https://comp-think.github.io/2018-2019/python/graph_attribute_instructions.py), [multigraph_instructions.py](https://comp-think.github.io/2018-2019/python/multigraph_instructions.py)
+    <hr />
+
+21. [13/12/18, *lab*] 7th Lesson
+    * content: [GitHub](https://github.com/marilenadaquino/computational_thinking/tree/master/ay-2018-2019/7_8_lesson)
+    * exercises: [Python](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/7_8_lesson/exercise.py)
+    * additional material:
+        * CSV file: [topics.csv](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/7_8_lesson/topics.csv)
+        * [example.py](https://raw.githubusercontent.com/marilenadaquino/computational_thinking/master/ay-2018-2019/7_8_lesson/example.py)
+    <hr />
+
+22. [14/12/18, *the*] Backtracking algorithms
+    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/13%20-%20Backgtracking%20algorithms.html)
+    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/13%20-%20Backgtracking%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-13)
+    * exercises: [1](https://github.com/comp-think/2018-2019/issues/34)
+    * Python: [peg_solitaire.py](https://comp-think.github.io/2018-2019/python/peg_solitaire.py)
     <hr />
 
 ### Schedule
