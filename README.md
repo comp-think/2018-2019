@@ -187,6 +187,11 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/34)
     * Python: [peg_solitaire.py](https://comp-think.github.io/2018-2019/python/peg_solitaire.py)
     <hr />
+    
+23. [17/12/18, *the*] Project
+    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/14%20-%20Project.html)
+    * material: [GitHub](https://github.com/comp-think/2018-2019/tree/master/docs/project)
+    <hr />
 
 ### Schedule
 
