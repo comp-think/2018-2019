@@ -187,8 +187,24 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/34)
     * Python: [peg_solitaire.py](https://comp-think.github.io/2018-2019/python/peg_solitaire.py)
     <hr />
-    
-23. [17/12/18, *the*] Project
+
+23. [28/11/18, *exa*] First partial examination
+    * content: [test 1](https://comp-think.github.io/2018-2019/exams/second-partial-examination-01.pdf), [test 2](https://comp-think.github.io/2018-2019/exams/second-partial-examination-02.pdf)
+    * solutions:
+        * exercise 1:
+            * solution to "Describe the steps chatacterising the dynamic programming algorithmic approach": [base case: solution exists] return the solution calculated previously, otherwise; [base case: address directly] address directly if it is an easy-to-solve problem, otherwise; [divide] split the input material into two or more balanced parts, each depicting a sub-problem of the original one; [conquer] run the same algorithm recursively for every balanced parts obtained in the previous step; [combine] reconstruct the final solution of the problem by means of the partial solutions; [memorize] store the solution to the problem for reusing it.
+            * solution to "Describe the steps characterising the backtracking algorithmic approach": [leaf-win] if current node is a leaf and it is a solution then return it, otherwise; [leaf-lose] if current node is a leaf but it is not a solution, then return no solution back the parent node, otherwise; [recursive-step] apply recursively the whole approach for each child of the current node, until one of these recursive executions returns a solution - if no solution, back the parent node of the current one.
+        * exercise 2:
+            * solution to "Describe the main characteristics that the data structure *dictionary* has": A dictionary is a **countable collection** of **unordered key-value pairs**, where the **key is non-repeatable** in the dictionary
+            * solution to "Considering a particular central node of a tree as focus, introduce the nomenclature used to refer to all the other nodes": the **parent node** of a given one is a node directly connected to another one when moving close to the root node; a **child node** of a given one is a node directly connected to another one when moving away from the root node; a **sibling node** of a given one is a node that shares the same parent node; an **ancestor node** of a given one is a node that is reachable by following the child-parent path repeatedly; a **descendant node** of a given one is a node that is reachable by following the parent-child path repeatedly.
+        * exercise 3: 
+            * solution to "Write does the Python function `def merge_sort(input_list)` implementing the *merge sort* (the function `merge` can be used without providing an implementation)": [Python implementation](https://comp-think.github.io/2018-2019/python/merge_sort.py)
+            * solution to "Write does the Python function `def merge(left_list, right_list)` used in the *combine* step of the *merge sort*": [Python implementation](https://comp-think.github.io/2018-2019/python/merge.py)
+        * exercise 4: [Python script](https://comp-think.github.io/2018-2019/python/f_2nd_partial_ex4.py) to calculate the output of the function `f` - run with `python f_2nd_partial_ex4.py` and follow the instructions
+        * exercise 5: [implementation](https://comp-think.github.io/2018-2019/python/pal_2nd_partial_ex5.py) of the function `pal`
+    <hr />
+  
+24. [17/12/18, *the*] Project
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/14%20-%20Project.html)
     * material: [GitHub](https://github.com/comp-think/2018-2019/tree/master/docs/project)
     <hr />
