@@ -198,10 +198,10 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
             * solution to "Describe the main characteristics that the data structure *dictionary* has": A dictionary is a **countable collection** of **unordered key-value pairs**, where the **key is non-repeatable** in the dictionary
             * solution to "Considering a particular central node of a tree as focus, introduce the nomenclature used to refer to all the other nodes": the **parent node** of a given one is a node directly connected to another one when moving close to the root node; a **child node** of a given one is a node directly connected to another one when moving away from the root node; a **sibling node** of a given one is a node that shares the same parent node; an **ancestor node** of a given one is a node that is reachable by following the child-parent path repeatedly; a **descendant node** of a given one is a node that is reachable by following the parent-child path repeatedly.
         * exercise 3: 
-            * solution to "Write does the Python function `def merge_sort(input_list)` implementing the *merge sort* (the function `merge` can be used without providing an implementation)": [Python implementation](https://comp-think.github.io/2018-2019/python/merge_sort.py)
-            * solution to "Write does the Python function `def merge(left_list, right_list)` used in the *combine* step of the *merge sort*": [Python implementation](https://comp-think.github.io/2018-2019/python/merge.py)
-        * exercise 4: [Python script](https://comp-think.github.io/2018-2019/python/f_2nd_partial_ex4.py) to calculate the output of the function `f` - run with `python f_2nd_partial_ex4.py` and follow the instructions
-        * exercise 5: [implementation](https://comp-think.github.io/2018-2019/python/pal_2nd_partial_ex5.py) of the function `pal`
+            * solution to "Write does the Python function `def merge_sort(input_list)` implementing the *merge sort* (the function `merge` can be used without providing an implementation)": [Python implementation](https://comp-think.github.io/2018-2019/python/merge_sort.py).
+            * solution to "Write does the Python function `def merge(left_list, right_list)` used in the *combine* step of the *merge sort*": [Python implementation].(https://comp-think.github.io/2018-2019/python/merge.py)
+        * exercise 4: [Python script](https://comp-think.github.io/2018-2019/python/f_2nd_partial_ex4.py) to calculate the output of the function `f` - run with `python f_2nd_partial_ex4.py` and follow the instructions.
+        * exercise 5: [implementation](https://comp-think.github.io/2018-2019/python/pal_2nd_partial_ex5.py) of the function `pal`.
     <hr />
   
 24. [17/12/18, *the*] Project
