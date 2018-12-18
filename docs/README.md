@@ -188,7 +188,7 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * Python: [peg_solitaire.py](https://comp-think.github.io/2018-2019/python/peg_solitaire.py)
     <hr />
 
-23. [28/11/18, *exa*] First partial examination
+23. [28/11/18, *exa*] Second partial examination
     * content: [test 1](https://comp-think.github.io/2018-2019/exams/second-partial-examination-01.pdf), [test 2](https://comp-think.github.io/2018-2019/exams/second-partial-examination-02.pdf)
     * solutions:
         * exercise 1:
