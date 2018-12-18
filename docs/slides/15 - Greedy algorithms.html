@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Greedy algorithms</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/ctc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/addon.css"></link>
+		<link rel="stylesheet" href="css/font-awesome.min.css"></link>
+		<link rel="stylesheet" href="css/academicons.min.css"></link>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="title" class="title_slide" role="doc-cover">
+					<h1>Greedy algorithms</h1>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+						<p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></p>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Communication 1</h2>
+					<p>All the material about the project is available online at <a href="https://github.com/comp-think/2018-2019/tree/master/docs/project">https://github.com/comp-think/2018-2019/tree/master/docs/project</a></p>
+				</section>
+				
+				<section>
+					<h2>Communication 2</h2>
+                    <p>The solutions to the exercises of the second partial examination have been published online in the <a href="https://github.com/comp-think/2018-2019/">GitHub repository</a> of the course</p>
+                </section>
+
+				<section>
+					<h2>Communication 3</h2>
+					<p>All the exam sessions will be uploaded on AlmaEsami soon</p>
+					<p>For each date:</p>
+                    <ul>
+                        <li><p>written examination: 10-12</p></li>
+                        <li><p>project oral colloquium: 13-16</p></li>
+                    </ul>
+				</section>
+				
+				<section>
+					<h2>Any question about the previous lecture?</h2>
+				</section>
+				
+				<section>
+					<h2>Historic hero: Evelyn Berezin</h2>
+					<img class="wm fr mlm" src="img/berezin.jpg" />
+                    <p>She was a physicist and entrepreneur</p>
+                    <p class="fragment">She started to work in a company that produced digital computers, and then she founded her own company: Redactron Corporation</p>
+                    <p class="fragment">In this new company, she started to work on computer systems to simplify the work of secretaries</p>
+                    <p class="fragment">The main product was <em>Data Secretary</em>, the very <span class="fragment highlight-red">first word processor</span> in history</p>
+				</section>
+				
+				<section>
+					<h2>Greedy algorithms</h2>
+					<p>At every stage of execution of a particular algorithm when we are seeking for possible candidates for constructing the solution to a computational problem, this approach makes always the choice that is optimal (i.e. the best one) <span class="fragment highlight-red">in that particular moment</span></p>
+					<p class="fragment">It is easy to come up with a greedy algorithm for a problem</p>
+				</section>
+				
+				<section>
+					<h2>An example</h2>
+					<p>Computational problem: to give the change of a certain amount of euros in coins</p>
+					<p class="fragment">A possible greedy approach:</p>
+					<ol>
+						<li class="fragment"><p>Consider the coins to choose for the change as ordered in a decrescent way, from the highest value (i.e. 2 euros) to the lowest one (i.e. 1 cent)</p></li>
+						<li class="fragment"><p>For each kind of value, add in the candidate set of the solution as much coins of that value as possible until their sum is lesser than the remaining of the change to give</p></li>
+						<li class="fragment"><p>Return the selected coins for the change</p></li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>It cannot be used always</h2>
+					<p>Sometimes the solution found, while it provides a correct solution to the problem, is just suboptimal - i.e. it is not the best one for solving the problem</p>
+					<p class="fragment">For instance, if you are driving from Florence to Bologna, and, at a certain crossroad you find two signs indicating two different routes to get to Bologna</p> 
+					<ol>
+						<li class="fragment"><p>left route: get to Bologna by travelling for 42 kilometers</p></li>
+						<li class="fragment"><p>right route: get to Bologna by travelling for 56 kilometers</p></li>
+					</ol>
+					<p class="fragment">Greedy approach: go to left (1)</p>
+					<p class="fragment">It cannot predict the existence of traffic in the left route</p>
+				</section>
+				
+				<section>
+					<h2>Characteristics of greedy</h2>
+					<p><em>Greedy choice property</em>: at a certain step, we can choose the best candidate for improving the set of candidates bringing to a solution - this chioce can be somehow driven by all the previous choices</p>
+					<p class="fragment">The problem has an <em>optimal substructure</em>, i.e. optimal solution to a computational problem can be built by considering the optimal solutions to its subproblems</p>
+				</section>
+
+				<section>
+					<h2>Line wrap</h2>
+					<p>Computational problem: break a text into lines such that it will fit in the available width of a page</p>
+					<p class="fragment"><img src="img/wrap.png" /></p>
+				</section>
+				
+				<section>
+					<h2>Ancillary methods</h2>
+					<p class="mbs"><code>&lt;string>.split(&lt;string_separator>)</code></p>
+					<p class="mts mbn">It returns a list of strings where each string in the list represents a word (or a token)</p>
+					<p class="fragment mtn sst mbl">Example: <code>"a b c".split(" ")</code> returns the list <code>["a", "b", "c"]</code></p>
+					<div class="fragment mtl">
+						<p class="mbs"><code>&lt;string_separator>.join(&lt;list_of_strings>)</code></p>
+						<p class="mts mbn">It returns a string composed by all the strings in the list separated by <code>&lt;string_separator></code></p>
+						<p class="fragment mtn sst">Example: <code>" ".join(["a", "b", "c"])</code> returns the string <code>"a b c"</code></p>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Line wrap: the algorithm</h2>
+					<pre><code class="python">def line_wrap(text, line_width):
+    result = []
+    space_left = line_width
+    line = []
+
+    for word in text.split(" "):
+        word_len = len(word)
+        if word_len + 1 <= space_left:
+            line.append(word)
+            space_left = space_left - word_len + 1
+        else:
+            result.append(" ".join(line))
+            line = [word]
+            space_left = line_width - word_len
+
+    result.append(" ".join(line))
+    return "\n".join(result)</code></pre>
+				</section>
+				
+				<section class="title_slide">
+					<h2>
+						END
+						<span class="subtitle">Greedy algorithms</span>
+					</h2>
+					<div class="author">
+						<p><a href="https://www.unibo.it/sitoweb/silvio.peroni/en">Silvio Peroni</a></p>
+						<p class="contact">
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:silvio.peroni@unibo.it">silvio.peroni@unibo.it</a>
+							<i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0530-4305">0000-0003-0530-4305</a>
+							<i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/essepuntato">@essepuntato</a>
+						</p>
+						<p class="sst mtl"><a href="http://www.artshumanitiesculturalheritage.unibo.it/en/programmes/course-unit-catalogue/course-unit/2018/424624">Computational Thinking and Programming (A.Y. 2018/2019)</a></p>
+						<p class="ssst"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Second Cycle Degree in Digital Humanities and Digital Knowledge</a></p>
+						<p class="ssst"><a href="http://www.unibo.it/en">Alma Mater Studiorum - Università di Bologna</a></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

@@ -15,6 +15,7 @@ This space contains all the material related to the [Computational Thinking and 
 * *the* = theoretical lecture
 * *lab* = laboratory session
 * *exa* = partial examination
+* *add* = additional material 
 
 1. [12/11/18, *the*] Introduction to the course
    * slides ([HTML](https://comp-think.github.io/2018-2019/slides/00%20-%20Course%20introduction.html))
@@ -208,6 +209,18 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/14%20-%20Project.html)
     * material: [GitHub](https://github.com/comp-think/2018-2019/tree/master/docs/project)
     <hr />
+
+25. [18/12/18, *lab*] 8th Lesson (included in the material of the 7th lesson above)
+    <hr />
+
+26. [19/12/18, *the*] Greedy algorithms
+    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/15%20-%20Greedy%20algorithms.html)
+    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/14%20-%20Greedy%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-14)
+    * exercises: [1](https://github.com/comp-think/2018-2019/issues/35)
+    * Python: [line_wrap.py](https://comp-think.github.io/2018-2019/python/line_wrap.py)
+    <hr />
+
+27. [19/12/18, *add*] Ask a thesis: slides ([HTML](https://comp-think.github.io/2018-2019/slides/16%20-%20Ask%20a%20thesis.html)
 
 ### Schedule
 
