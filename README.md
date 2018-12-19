@@ -36,6 +36,8 @@ This space contains all the material related to the [Computational Thinking and 
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/02%20-%20Algorithms.html)
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/02%20-%20Algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-02)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/4), [2](https://github.com/comp-think/2018-2019/issues/5), [3](https://github.com/comp-think/2018-2019/issues/6)
+    * additional material:
+       * newspaper article ["The Yoda of the Silicon Valley"](https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html) by Roberts, dedicated to Donald Knuth
     <hr />
 
 4. [16/11/18, *the*] Computability
@@ -220,7 +222,8 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * Python: [line_wrap.py](https://comp-think.github.io/2018-2019/python/line_wrap.py)
     <hr />
 
-27. [19/12/18, *add*] Ask a thesis: slides ([HTML](https://comp-think.github.io/2018-2019/slides/16%20-%20Ask%20a%20thesis.html)
+27. [19/12/18, *add*] Ask a thesis
+    * slides: [HTML](https://comp-think.github.io/2018-2019/slides/16%20-%20Ask%20a%20thesis.html)
 
 ### Schedule
 
