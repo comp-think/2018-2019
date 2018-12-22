@@ -228,6 +228,11 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
 
 27. [19/12/18, *add*] Ask a thesis
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/16%20-%20Ask%20a%20thesis.html)
+    <hr />
+
+28. [19/12/18, *the*] Exercises on algorithms
+    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/15%20-%20Exercises%20on%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-15)
+    <hr />
 
 ### Schedule
 
