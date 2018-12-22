@@ -45,7 +45,6 @@ def float_diff(f1, f2):
 
 change = 2.76
 print(test_return_change(5.00, {2.0: 2, 1.0: 1}))
-print(return_change(2.76))
 print(test_return_change(2.76, {2.0: 1, 0.5: 1, 0.2:1, 0.05:1, 0.01: 1}))
 
 

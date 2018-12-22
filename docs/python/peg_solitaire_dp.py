@@ -15,16 +15,7 @@
 
 from anytree import Node
 from collections import deque
-from peg_solitaire import create_6x6_square_board, valid_moves, apply_move, undo_move
-
-
-# Test case for the algorithm
-def test_solve(pegs, holes, expected):
-    result = solve(pegs, holes)
-    if expected == result.name["in"] and len(pegs) == 1:
-        return True
-    else:
-        return False
+from peg_solitaire import create_6x6_square_board, valid_moves, apply_move, undo_move, test_solve
 
 
 # Code of the algorithm
