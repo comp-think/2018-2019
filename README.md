@@ -189,6 +189,8 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/13%20-%20Backtracking%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-13)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/34)
     * Python: [peg_solitaire.py](https://comp-think.github.io/2018-2019/python/peg_solitaire.py)
+    * additional material:
+        * solution to Python exercises: [1](https://comp-think.github.io/2018-2019/python/peg_solitaire_dp.py)
     <hr />
 
 23. [28/11/18, *exa*] Second partial examination
@@ -220,6 +222,8 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/14%20-%20Greedy%20algorithms.pdf), [Google Docs](https://tinyurl.com/comp-think-14)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/35)
     * Python: [line_wrap.py](https://comp-think.github.io/2018-2019/python/line_wrap.py)
+    * additional material:
+        * solution to Python exercises: [1](https://comp-think.github.io/2018-2019/python/return_change.py)
     <hr />
 
 27. [19/12/18, *add*] Ask a thesis
