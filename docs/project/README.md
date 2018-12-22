@@ -71,7 +71,7 @@ Example: `Wu Y, Wang N, Kropczynski J, Carroll JM. (2017) The appropriation of G
 
 Parameters:
 
-* author: the complete name (i.e. given name and family name) of the author for which one wants to retrieve its publication tree.
+* author: the complete name (i.e. "Given Name, Family Name") of the author for which one wants to retrieve its publication tree.
 
 Return all the publications written by such author described by the following tree:
 
@@ -93,6 +93,6 @@ The tuple in the list are sorted in descending order, starting from the author w
 
 Parameters:
 
-* author: the complete name (i.e. given name and family name) of the author for which one wants to retrieve its coauthor network.
+* author: the complete name (i.e. "Given Name, Family Name") of the author for which one wants to retrieve its coauthor network.
 
 Return a graph having a central node for the input author and a series of additional connected nodes for each other person who co-authored a paper with the input author, where the weight of the edge connecting the input author with his co-author is the number of paper they have co-authored together.
