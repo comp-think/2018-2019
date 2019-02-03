@@ -4,7 +4,7 @@ In this page it is possible to find the link to the various written examination 
 
 ## 25 January 2019 written examination
 
-**Text of the exam:** [PDF](https://comp-think.github.io/2018-2019/exams/written-examination-2019-01.pdf)
+**Text of the exam:** [PDF](https://comp-think.github.io/2018-2019/exams/written-examination-2019-01-25.pdf)
 
 **Solutions:**
 * Section 1 (theory):
