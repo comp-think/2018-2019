@@ -3,3 +3,7 @@ groups.txt
 students/
 scripts/
 data/
+*.odt
+*.ods
+rules.txt
+project_discussion/

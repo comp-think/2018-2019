@@ -8,6 +8,7 @@ This space contains all the material related to the [Computational Thinking and 
 
 1. [Material](#material)
 2. [Schedule](#schedule)
+3. [Links](#links)
 
 ### Material
 
@@ -262,3 +263,8 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
     <tr><td>18/12/18</td><td><span>Laboratory</span></td></tr>
     <tr><td>19/12/18</td><td>Greedy algorithms</td></tr>
 </table>
+
+
+### Links
+
+It is possible to find all the 2018/2019 texts of the written examination in the folder [docs/exams](https://github.com/comp-think/2018-2019/tree/master/docs/exams).
