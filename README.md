@@ -172,7 +172,7 @@ operation; Decision = it depicts a conditional operation; Input / Output = allow
 
 20. [12/12/18, *the*] Organising information: graph
     * slides: [HTML](https://comp-think.github.io/2018-2019/slides/12%20-%20Organising%20information%20-%20graphs.html)
-    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/12%20-%20Organising%20information%20-%20graphs.pdf), [Google Docs](https://tinyurl.com/yce9yd82)
+    * lecture notes: [PDF](https://comp-think.github.io/2018-2019/lecture-notes/12%20-%20Organising%20information%20-%20graphs.pdf), [Google Docs](https://tinyurl.com/ydblbthl)
     * exercises: [1](https://github.com/comp-think/2018-2019/issues/31), [2](https://github.com/comp-think/2018-2019/issues/32)
     * Python: [graph_instructions.py](https://comp-think.github.io/2018-2019/python/graph_instructions.py), [graph_attribute_instructions.py](https://comp-think.github.io/2018-2019/python/graph_attribute_instructions.py), [multigraph_instructions.py](https://comp-think.github.io/2018-2019/python/multigraph_instructions.py)
     <hr />
