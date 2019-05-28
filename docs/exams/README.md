@@ -2,6 +2,37 @@
 
 In this page it is possible to find the link to the various written examination of the course Computational Thinking and Programming, academic year 2018/2019.
 
+## 15 May 2019 written examination
+
+**Text of the exam:** [PDF](https://comp-think.github.io/2018-2019/exams/written-examination-2019-05-15.pdf)
+
+**Solutions:**
+* Section 1 (theory):
+  1. First in first out (FIFO)
+  
+     Last in first out (LIFO)
+     
+  2. `d[n] = 0` -> `d[n] = n`
+     
+     `d[n-1] = fib_dp(n-1, d) + fib_dp(n-2, d)` -> `d[n] = fib_dp(n-1, d) + fib_dp(n-2, d)`
+     
+  3. Function defined as follows: 
+     ```
+     def f(s, n):
+         return s[n] in "aeiou"
+     ```
+  4. regular grammars – form of production rules: ​`<non-terminal> ::= "terminal"` and `​<non-terminal> ::= "terminal" <non-terminal>`
+     
+     context-free grammars​ – form of production rules: ​`<non-terminal> ::= γ`
+     
+     context-sensitive grammars – form of production rules: ​`α <non-terminal> β ::= α γ β​`
+     
+     recursively enumerable grammars – form of production rules: `​α ::= β`
+
+* Section 2 (understanding): [Python script](https://comp-think.github.io/2018-2019/python/m_written_examination_2019-05-15_ex2.py) to calculate the output of `m(my_gr, my_fn, my_mat)` - run with `python m_written_examination_2019-05-15_ex2.py` and follow the instructions.
+
+* Section 3 (development): [implementation](https://comp-think.github.io/2018-2019/python/delta_encoding_written_examination_2019-05-15_ex3.py) of the function `delta_encoding`.
+
 ## 15 March 2019 written examination
 
 **Text of the exam:** [PDF](https://comp-think.github.io/2018-2019/exams/written-examination-2019-03-15.pdf)
