@@ -2,6 +2,109 @@
 
 In this page it is possible to find the link to the various written examination of the course Computational Thinking and Programming, academic year 2018/2019.
 
+## 20 September 2019 written examination
+
+**Text of the exam:** [PDF](https://comp-think.github.io/2018-2019/exams/written-examination-2019-09-20.pdf)
+
+**Solutions:**
+* Section 1 (theory):
+  1. recursive-step
+  
+     leaf-lose
+     
+  2. ```
+     def fib_dp(n, d=dict()):
+        if n not in d:
+           if n == 0 or n == 1:
+              d[n] = n
+           else:
+              d[n] = fib_dp(n-1, d) + fib_dp(n-2, d)
+
+        return d[n]
+     ```
+     
+  3. Function defined as follows: 
+     ```
+     def f(s, n):
+         return len(s) % n == 0
+     ```
+  4. These characteristics are that, at a certain step, we can choose the best candidate for improving the set of candidates bringing to a solution (*greedy choice*), and that the optimal solution to a computational problem can be built by considering the optimal solutions to its subproblems (*optimal substructure*).
+
+* Section 2 (understanding): [Python script](https://comp-think.github.io/2018-2019/python/rs_written_examination_2019-09-20_ex2.py) to calculate the output of `rs(my_gn, my_fn, my_mn)` - run with `python rs_written_examination_2019-09-20_ex2.py` and follow the instructions.
+
+* Section 3 (development): [implementation](https://comp-think.github.io/2018-2019/python/multiple_replace_written_examination_2019-09-20_ex3.py) of the function `multiple_replace`.
+
+## 15 July 2019 written examination
+
+**Text of the exam:** [PDF](https://comp-think.github.io/2018-2019/exams/written-examination-2019-07-15.pdf)
+
+**Solutions:**
+* Section 1 (theory):
+  1. machine language
+  
+     high-level programming languages
+  
+     low-level programming languages
+     
+  2. ```
+     def line_wrap(text, line_width):
+        result = []
+        space_left = line_width
+        line = []
+
+        for word in text.split(" "):
+            word_len = len(word)
+            if word_len + 1 > space_left:
+                result.append(" ".join(line))
+                line = [word]
+                space_left = line_width - word_len
+            else:
+                line.append(word)
+                space_left = space_left - word_len + 1
+
+        result.append(" ".join(line))
+        return "\n".join(result)
+     ```
+     
+  3. Function defined as follows: 
+     ```
+     def f(fn, i1, i2):
+         return fn(i1) == i2
+     ```
+  4. The main difference between the two approaches is that *dynamic programming*, in addition to what done by *divide and conquer*, stores the solutions of the subproblems already addressed for reusing them if they reoccur again. On the one hand, this technique allows one to save a huge amount of computation time if similar subproblems happen more than once. On the other hand, one needs additional memory space for storing the solutions to subproblems already addressed.
+
+* Section 2 (understanding): [Python script](https://comp-think.github.io/2018-2019/python/char_n_written_examination_2019-07-15_ex2.py) to calculate the output of `char_n(my_gn, my_fn, my_mn)` - run with `python char_n_written_examination_2019-07-15_ex2.py` and follow the instructions.
+
+* Section 3 (development): [implementation](https://comp-think.github.io/2018-2019/python/alive_in_next_step_written_examination_2019-07-15_ex3.py) of the function `alive_in_next_step`.
+
+## 21 June 2019 written examination
+
+**Text of the exam:** [PDF](https://comp-think.github.io/2018-2019/exams/written-examination-2019-06-21.pdf)
+
+**Solutions:**
+* Section 1 (theory):
+  1. context-free grammars
+  
+     recursively enumerable grammars
+  
+     regular grammars
+     
+  2. 11
+     
+  3. Function defined as follows: 
+     ```
+     def f(n, l):
+         result = 0
+         for i in l:
+             result += i
+         return result == n"
+     ```
+  4. The data structures are *set* and *dictionary*. Both the data structures are countable collection of unordered entities. However, while an entity in the set is just an item and cannot be repeated, in a dictionary an entity is a key-value pair, where the key is non-repeatable in the dictionary, while the values are.  
+
+* Section 2 (understanding): [Python script](https://comp-think.github.io/2018-2019/python/c_written_examination_2019-06-21_ex2.py) to calculate the output of `c(my_fn, my_mat)` - run with `python c_written_examination_2019-06-21_ex2.py` and follow the instructions.
+
+* Section 3 (development): [implementation](https://comp-think.github.io/2018-2019/python/delta_decoding_written_examination_2019-06-21_ex3.py) of the function `delta_decoding`.
+
 ## 15 May 2019 written examination
 
 **Text of the exam:** [PDF](https://comp-think.github.io/2018-2019/exams/written-examination-2019-05-15.pdf)
