@@ -15,8 +15,8 @@
 
 
 # Test case for the algorithm
-def test_multiple_replace(s, c, r, o, expected):
-    result = multiple_replace(s, c, r, o)
+def test_all_tokens_string_gen(tokens, expected):
+    result = all_tokens_string_gen(tokens)
     if expected == result:
         return True
     else:
@@ -24,21 +24,23 @@ def test_multiple_replace(s, c, r, o, expected):
 
 
 # Code of the algorithm
-def multiple_replace(s, c, r, o):
-    i_o = 0
+def all_tokens_string_gen(tokens):
+    result = set()
+    alfa_tokens = sorted(tokens)
+    len_tokens = len(tokens)
 
-    if o is None:
-        o = len(s)
+    for idx in range(len_tokens):
+        str_list = []
+        for jdx in range(idx, len_tokens):
+            str_list.append(alfa_tokens[jdx])
+            result.add("".join(str_list))
 
-    for cur_c in s:
-        if cur_c == c and i_o < o:
-            s = s.replace(c, r[i_o % len(r)], 1)
-            i_o += 1
-
-    return s
+    return result
 
 
-print(test_multiple_replace("mamma mia!", "m", ["n"], 3, "nanna mia!"))
-print(test_multiple_replace("mamma mia!", "m", ["p", "l", "l"], 3, "palla mia!"))
-print(test_multiple_replace("mamma mia!", "m", ["n", "s", "t"], None, "nasta nia!"))
+print(test_all_tokens_string_gen(["a"], {"a"}))
+print(test_all_tokens_string_gen(["a", "b"], {"a", "b", "ab"}))
+print(test_all_tokens_string_gen(["a", "c", "b"], {"a", "b", "c", "ab", "bc", "abc"}))
+print(test_all_tokens_string_gen(["a", "c", "b", "d"], {"a", "b", "c", "d", "ab", "bc", "cd",
+                                                        "abc", "bcd", "abcd"}))
 
